@@ -36,6 +36,10 @@
   color: #0f172a;
 }
 
+[data-theme="light"] .mobile-menu a {
+  color: #e5eefb !important;
+}
+
 [data-theme="light"] .text-gradient {
   background: linear-gradient(135deg, #0f172a, #0891b2 45%, #6d28d9);
   -webkit-background-clip: text;
