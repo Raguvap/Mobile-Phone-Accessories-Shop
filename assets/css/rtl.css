@@ -1,0 +1,21 @@
+[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] nav,
+[dir="rtl"] .flex {
+  direction: rtl;
+}
+
+[dir="rtl"] .mobile-menu,
+[dir="rtl"] input,
+[dir="rtl"] textarea,
+[dir="rtl"] select {
+  text-align: right;
+}
+
+[dir="rtl"] .float-cta {
+  right: auto;
+  left: 1rem;
+}

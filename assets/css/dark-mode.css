@@ -1,0 +1,70 @@
+[data-theme="light"] {
+  color-scheme: light;
+}
+
+[data-theme="light"] body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(34, 211, 238, .22), transparent 28rem),
+    radial-gradient(circle at 80% 0%, rgba(139, 92, 246, .18), transparent 30rem),
+    #f6f9ff;
+  color: #0f172a;
+}
+
+[data-theme="light"] .glass,
+[data-theme="light"] .product-card {
+  background: rgba(255, 255, 255, .78);
+  border-color: rgba(15, 23, 42, .12);
+  box-shadow: 0 20px 60px rgba(15, 23, 42, .12);
+}
+
+[data-theme="light"] header {
+  background: rgba(255, 255, 255, .78) !important;
+  border-color: rgba(15, 23, 42, .12) !important;
+}
+
+[data-theme="light"] .nav-link,
+[data-theme="light"] p,
+[data-theme="light"] .text-slate-300,
+[data-theme="light"] .text-slate-400 {
+  color: #475569 !important;
+}
+
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] a:not(.btn-primary) {
+  color: #0f172a;
+}
+
+[data-theme="light"] .text-gradient {
+  background: linear-gradient(135deg, #0f172a, #0891b2 45%, #6d28d9);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+[data-theme="light"] input,
+[data-theme="light"] textarea,
+[data-theme="light"] select {
+  background: rgba(255, 255, 255, .9) !important;
+  border-color: rgba(15, 23, 42, .16) !important;
+  color: #0f172a;
+}
+
+.mode-toggle,
+.rtl-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+  color: inherit;
+}
+
+[data-theme="light"] .mode-toggle,
+[data-theme="light"] .rtl-toggle {
+  border-color: rgba(15, 23, 42, .14);
+  background: rgba(15, 23, 42, .04);
+}
