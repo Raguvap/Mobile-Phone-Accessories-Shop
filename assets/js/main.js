@@ -31,21 +31,13 @@ document.addEventListener("DOMContentLoaded", () => {
   applyTheme(localStorage.getItem(THEME_KEY) || "dark");
   applyDirection(localStorage.getItem(DIR_KEY) || "ltr");
 
-  document.querySelectorAll(".nav-dropdown").forEach((dropdown) => {
-    dropdown.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        dropdown.removeAttribute("open");
-      });
-    });
-  });
-
   document.addEventListener("click", (event) => {
     document.querySelectorAll(".nav-dropdown[open]").forEach((dropdown) => {
       if (!dropdown.contains(event.target)) {
         dropdown.removeAttribute("open");
       }
     });
-  }, true);
+  });
 
   document.querySelectorAll("[data-year]").forEach((node) => {
     node.textContent = new Date().getFullYear();
