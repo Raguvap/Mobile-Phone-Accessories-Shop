@@ -23,16 +23,16 @@
 }
 
 [data-theme="light"] .nav-link,
-[data-theme="light"] p,
-[data-theme="light"] .text-slate-300,
-[data-theme="light"] .text-slate-400 {
+[data-theme="light"] p:not(.site-footer p),
+[data-theme="light"] .text-slate-300:not(.site-footer .text-slate-300),
+[data-theme="light"] .text-slate-400:not(.site-footer .text-slate-400) {
   color: #475569 !important;
 }
 
 [data-theme="light"] h1,
 [data-theme="light"] h2,
 [data-theme="light"] h3,
-[data-theme="light"] a:not(.btn-primary) {
+[data-theme="light"] a:not(.btn-primary):not(.site-footer a) {
   color: #0f172a;
 }
 

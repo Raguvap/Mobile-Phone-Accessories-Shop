@@ -292,3 +292,24 @@ blockquote {
     grid-template-columns: 1fr !important;
   }
 }
+
+/* ── Rich Footer ── */
+.site-footer { background: #050816; border-top: 1px solid rgba(255,255,255,.12); color: #94a3b8; }
+.site-footer h3 { color: #fff !important; }
+.site-footer p { color: #94a3b8 !important; }
+.site-footer a { color: #94a3b8 !important; transition: color .2s ease; }
+.site-footer a:hover { color: #22d3ee !important; }
+.site-footer li { color: #94a3b8; }
+.footer-social a {
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.12);
+  color: #94a3b8 !important;
+  transition: border-color .2s ease, color .2s ease;
+}
+.footer-social a:hover { border-color: #22d3ee !important; color: #22d3ee !important; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); }
+.footer-bottom p { color: #475569 !important; }
