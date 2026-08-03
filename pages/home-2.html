@@ -74,7 +74,7 @@
 <main>
 
   <!-- FULL-WIDTH CINEMATIC HERO with overlay -->
-  <section class="relative h-[92vh] min-h-[560px] overflow-hidden">
+  <section class="relative h-[92vh] min-h-[560px] overflow-hidden mx-auto max-w-7xl rounded-3xl mt-2">
     <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1800&q=90" alt="Sleek glowing futuristic smartphone in dark lighting">
     <div class="absolute inset-0" style="background:linear-gradient(120deg,rgba(5,8,22,.94) 40%,rgba(5,8,22,.55) 100%)"></div>
     <div class="relative z-10 flex h-full flex-col justify-center px-6 md:px-16 max-w-3xl">
@@ -100,8 +100,7 @@
         </div>
         <a href="products.html" class="text-cyan-400 font-bold text-sm hover:text-cyan-300">View all &rarr;</a>
       </div>
-    </div>
-    <div class="mt-8 flex gap-5 overflow-x-auto px-4 pb-4 md:px-8 snap-x snap-mandatory" style="scrollbar-width:none">
+       <div class="mt-8 flex gap-5 overflow-x-auto  pb-4 md:px-8 snap-x snap-mandatory" style="scrollbar-width:none">
       <article class="snap-start shrink-0 w-72 md:w-80 card-glass-glow">
         <div class="relative overflow-hidden rounded-2xl mb-4"><img class="h-48 w-full object-cover" src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=700&q=85" alt="iPhone 16 Pro"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black bg-cyan-500 text-slate-950">Save $120</span></div>
         <span class="text-xs font-black uppercase tracking-widest text-cyan-300">Apple</span><h3 class="mt-1 text-xl font-black text-white">iPhone 16 Pro Pack</h3><p class="mt-2 text-xs text-slate-300">Phone + MagSafe case + tempered glass + USB-C charger</p><div class="mt-4 flex items-center justify-between border-t border-white/10 pt-3"><span class="text-2xl font-black text-cyan-300">$999</span><a href="product-details.html" class="btn-primary py-2 px-4 text-xs">Buy now</a></div>
@@ -115,13 +114,18 @@
         <span class="text-xs font-black uppercase tracking-widest text-cyan-300">Google</span><h3 class="mt-1 text-xl font-black text-white">Pixel 9 Pro Deal</h3><p class="mt-2 text-xs text-slate-300">Phone + wireless charger + slim case + setup support</p><div class="mt-4 flex items-center justify-between border-t border-white/10 pt-3"><span class="text-2xl font-black text-cyan-300">$799</span><a href="product-details.html" class="btn-primary py-2 px-4 text-xs">Buy now</a></div>
       </article>
     </div>
+    </div>
+   
   </section>
 
   <!-- SPLIT BENTO SECTION — Trade-in -->
   <section class="px-4 py-16">
     <div class="mx-auto max-w-7xl card-bento-hero">
       <div class="grid lg:grid-cols-2 gap-8 items-center">
-        <img class="h-80 w-full rounded-2xl object-cover" src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=900&q=85" alt="Phone trade-in counter">
+       <img
+  class="h-80 w-full rounded-2xl object-contain bg-slate-900"
+  src="../assets/images/p-5.png"
+  alt="Phone trade-in counter">
         <div>
           <span class="badge-tag mb-3">Trade-In Counter</span>
           <h2 class="text-3xl font-black md:text-5xl text-white">Your old phone is worth more than you think.</h2>
@@ -253,6 +257,6 @@
 </footer>
 
 <script src="../assets/js/main.js"></script>
-<div class="fixed bottom-20 right-4 z-50 flex gap-2" data-mode-controls><button class="mode-toggle" type="button" data-theme-toggle aria-label="Switch theme">&#9790;</button><button class="rtl-toggle sans" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button></div>
+
 </body>
 </html>
