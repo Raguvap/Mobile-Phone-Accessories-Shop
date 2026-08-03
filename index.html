@@ -45,10 +45,14 @@
 
       <!-- Navbar Actions (HTML 10 Inspired Controls) -->
       <div class="navbar-actions">
-        <button class="theme-toggle hidden lg:inline-flex" type="button"  data-theme-toggle aria-label="Switch theme">☾</button>
-        <button class="rtl-toggle theme-toggle hidden lg:inline-flex" type="button" data-rtl-toggle  aria-label="Toggle RTL layout">RTL</button>
+        <button class="theme-toggle hidden lg:inline-flex" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle hidden lg:inline-flex" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
         <a href="pages/contact.html" class="btn-primary text-xs py-2 px-4 shadow-sm hidden sm:inline-flex whitespace-nowrap">Book Repair</a>
-        <button class="rounded-full border border-white/15 px-3 py-2 text-sm lg:hidden text-white font-bold whitespace-nowrap" data-menu-button aria-expanded="false">Menu ☰</button>
+        <button class="grid h-10 w-10 place-items-center rounded-full border border-white/20 bg-slate-900/80 text-white lg:hidden focus:outline-none" data-menu-button aria-expanded="false" aria-label="Open navigation menu">
+          <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+        </button>
       </div>
     </nav>
 
