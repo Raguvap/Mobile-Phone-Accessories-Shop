@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -9,32 +9,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/dark-mode.css"><link rel="stylesheet" href="assets/css/rtl.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/dark-mode.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
 </head>
-<body><header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl" style="position:relative;z-index:50;">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
-    <a href="index.html" class="flex items-center gap-3 font-black tracking-wide"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a>
-    <button class="rounded-full border border-white/15 px-3 py-2 text-sm md:hidden" data-menu-button aria-expanded="false">Menu</button>
-    <div class="hidden items-center gap-7 md:flex">
-     <details class="nav-dropdown">
-        <summary class="nav-link">Home</summary>
-        <div class="nav-dropdown-menu">
-          <a href="index.html">Home 1</a>
-          <a href="pages/home-2.html">Home 2</a>
+<body>
+  <!-- Header -->
+  <header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl sticky top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
+      <a href="index.html" class="flex items-center gap-3 font-black tracking-wide text-white text-xl">
+        <span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient text-slate-950 font-black">V</span>
+        VoltEdge
+      </a>
+
+      <!-- Desktop Links (Home Dropdown ONLY) -->
+      <div class="hidden items-center gap-3.5 xl:gap-6 lg:flex text-xs xl:text-sm font-bold text-slate-200 whitespace-nowrap">
+        <div class="nav-dropdown-container">
+          <details class="nav-dropdown">
+            <summary class="nav-link font-extrabold text-cyan-300">Home</summary>
+            <div class="nav-dropdown-menu">
+              <a href="index.html" class="block">Home 1: Flagship Tech Hub</a>
+              <a href="pages/home-2.html" class="block">Home 2: Cyber Gamer Lounge</a>
+            </div>
+          </details>
         </div>
-      </details>
-      <a class="nav-link" href="pages/about.html">About</a>
-      <a class="nav-link" href="pages/products.html">Products</a>
-      <a class="nav-link" href="pages/services.html">Services</a>
-      <a class="nav-link" href="pages/contact.html">Contact</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/about.html">About</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/shop.html">Shop Gear</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/products.html">Phones</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/subscriptions.html">Protection Plans</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/repair-guide.html">Repair Guide</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/b2b.html">Corporate B2B</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/services.html">Services</a>
+        <a class="nav-link hover:text-cyan-300" href="pages/contact.html">Contact</a>
+      </div>
+
+      <!-- Navbar Actions (HTML 10 Inspired Controls) -->
+      <div class="navbar-actions">
+        <button class="theme-toggle hidden lg:inline-flex" type="button"  data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle hidden lg:inline-flex" type="button" data-rtl-toggle  aria-label="Toggle RTL layout">RTL</button>
+        <a href="pages/contact.html" class="btn-primary text-xs py-2 px-4 shadow-sm hidden sm:inline-flex whitespace-nowrap">Book Repair</a>
+        <button class="rounded-full border border-white/15 px-3 py-2 text-sm lg:hidden text-white font-bold whitespace-nowrap" data-menu-button aria-expanded="false">Menu ☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-2">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
+        <a href="index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
+        <a href="pages/home-2.html" class="block py-1 text-slate-400">Home 2: Cyber Gamer Lounge</a>
+      </div>
+      <a href="pages/about.html" class="py-1">About Us</a>
+      <a href="pages/shop.html" class="py-1">Shop Accessories</a>
+      <a href="pages/products.html" class="py-1">Smartphones</a>
+      <a href="pages/subscriptions.html" class="py-1">Protection Plans</a>
+      <a href="pages/repair-guide.html" class="py-1">Charging & Repair Guide</a>
+      <a href="pages/b2b.html" class="py-1">Corporate Bulk B2B</a>
+      <a href="pages/services.html" class="py-1">Repair Services</a>
+      <a href="pages/contact.html" class="py-1">Contact & Map</a>
+      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      </div>
     </div>
-    <a href="pages/contact.html" class="btn-primary hidden md:inline-flex">Repair enquiry</a>
-  </nav>
-  <div class="mobile-menu mx-4 mb-4 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 md:hidden" data-mobile-menu>
-    <a href="index.html">Home 1</a><a href="pages/home-2.html">Home 2</a><a href="pages/about.html">About</a><a href="pages/products.html">Products</a><a href="pages/services.html">Services</a><a href="pages/contact.html">Contact</a>
-  </div>
-</header>
-  
+  </header>
 
   <main>
     <section class="hero-section relative overflow-hidden px-4 pb-20 pt-28 md:pt-36">
@@ -52,7 +90,7 @@
           </dl>
         </div>
         <div class="phone-showcase glass rounded-[2rem] p-5">
-          <img class="mb-4 rounded-[1.5rem]" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1200&q=85" alt="Real smartphones displayed on a clean retail counter">
+          <img class="mb-4 rounded-[1.5rem]" src="assets/images/p-2.png" alt="Real smartphones displayed on a clean retail counter">
           <div class="grid grid-cols-2 gap-4">
             <article class="product-card p-4"><div class="h-60 w-full overflow-hidden rounded-3xl"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Black Android smartphone with camera module"></div><h2 class="mt-4 text-xl font-black">Galaxy Series</h2><p class="text-slate-400">AMOLED displays, AI cameras and long battery options.</p></article>
             <article class="product-card  p-4"><div class="h-60 w-full overflow-hidden rounded-3xl"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="Real iPhone on a desk"></div><h2 class="mt-4 text-xl font-black">iPhone Series</h2><p class="text-slate-400">Pro performance, premium build and smooth setup support.</p></article>
@@ -63,141 +101,180 @@
 
     <section class="px-4 py-16">
       <div class="mx-auto max-w-7xl">
-        <div class="flex flex-wrap items-end justify-between gap-4"><h2 class="text-3xl font-black md:text-5xl">Featured Brands</h2><p class="max-w-xl text-slate-300">Choose from official-style ranges for everyday users, creators, gamers and business buyers. We help compare display quality, battery life, camera needs and storage before checkout.</p></div>
-        <div class="mt-8 grid grid-cols-2 gap-3 md:grid-cols-5">
-          <div class="glass rounded-3xl p-6 text-center font-black">Apple</div><div class="glass rounded-3xl p-6 text-center font-black">Samsung</div><div class="glass rounded-3xl p-6 text-center font-black">OnePlus</div><div class="glass rounded-3xl p-6 text-center font-black">Google</div><div class="glass rounded-3xl p-6 text-center font-black">Xiaomi</div>
-          <div class="glass rounded-3xl p-6 text-center font-black">Nothing</div>
-          <div class="glass rounded-3xl p-6 text-center font-black">Oppo</div>
-<div class="glass rounded-3xl p-6 text-center font-black">Vivo</div>
-<div class="glass rounded-3xl p-6 text-center font-black">Motorola</div>
-<div class="glass rounded-3xl p-6 text-center font-black">Realme</div>
+        <div class="flex flex-wrap items-end justify-between gap-4"><h2 class="text-3xl font-black md:text-5xl">Featured Brands</h2><p class="max-w-xl text-slate-300">Official-grade devices and accessories from leading global manufacturers.</p></div>
+        <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-5">
+          <div class="brand-tile-neo">Apple</div>
+          <div class="brand-tile-neo">Samsung</div>
+          <div class="brand-tile-neo">OnePlus</div>
+          <div class="brand-tile-neo">Google</div>
+          <div class="brand-tile-neo">Xiaomi</div>
+          <div class="brand-tile-neo">Nothing</div>
+          <div class="brand-tile-neo">Oppo</div>
+          <div class="brand-tile-neo">Vivo</div>
+          <div class="brand-tile-neo">Motorola</div>
+          <div class="brand-tile-neo">Realme</div>
         </div>
       </div>
     </section>
 
-    <section class="px-4 py-16">
-      <div class="feature-band mx-auto max-w-7xl p-6 md:p-10">
-        <div class="grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-          <div>
-            <p class="text-sm font-black uppercase tracking-[.22em] text-cyan-200">Product guidance</p>
-            <h2 class="mt-3 text-3xl font-black md:text-5xl">Choose the right phone, not just the newest one.</h2>
-            <p class="mt-5 text-lg leading-8 text-slate-300">We explain each product in plain language: camera quality, battery size, storage, charging speed, display type, case fit and repair support. That helps you compare iPhone, Galaxy and Android models by real daily use before you spend.</p>
-            <div class="mt-7 flex flex-wrap gap-2">
-              <span class="spec-pill">Camera comparison</span>
-              <span class="spec-pill">Battery checks</span>
-              <span class="spec-pill">Case matching</span>
-              <span class="spec-pill">Setup support</span>
-            </div>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-3">
-            <article class="product-feature">
-              <img src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="Premium iPhone product view">
-              <div class="p-4"><h3 class="font-black">iPhone</h3><p class="mt-1 text-sm text-slate-400">Smooth performance, strong video, premium build.</p></div>
-            </article>
-            <article class="product-feature">
-              <img src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Premium Android phone camera view">
-              <div class="p-4"><h3 class="font-black">Android</h3><p class="mt-1 text-sm text-slate-400">Flexible choices for camera, battery and price.</p></div>
-            </article>
-            <article class="product-feature">
-              <img src="https://images.unsplash.com/photo-1603539444875-76e7684265f6?auto=format&fit=crop&w=700&q=85" alt="Mobile charging accessories on a desk">
-              <div class="p-4"><h3 class="font-black">Accessories</h3><p class="mt-1 text-sm text-slate-400">Chargers, cases and audio matched to your device.</p></div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <!-- Product Guidance Section: Asymmetric Bento Grid Cards -->
     <section class="px-4 py-16">
       <div class="mx-auto max-w-7xl">
-        <div class="flex flex-wrap items-end justify-between gap-4">
-          <h2 class="text-3xl font-black md:text-5xl">Categories & Accessories</h2>
-          <p class="max-w-xl text-slate-300">Every accessory is selected to match current charging standards, case fit, camera protection and daily durability.</p>
-        </div>
-        <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          <a class="product-card p-6" href="pages/products.html"><span class="text-4xl">📱</span><h3 class="mt-8 text-2xl font-black">Cases</h3><p class="text-slate-400">Clear, rugged, silicone and MagSafe-ready covers with precise button fit.</p></a>
-          <a class="product-card p-6" href="pages/products.html"><span class="text-4xl">⚡</span><h3 class="mt-8 text-2xl font-black">Chargers</h3><p class="text-slate-400">USB-C PD, GaN adapters and wireless pads for phones, tablets and laptops.</p></a>
-          <a class="product-card p-6" href="pages/products.html"><span class="text-4xl">🎧</span><h3 class="mt-8 text-2xl font-black">Earbuds</h3><p class="text-slate-400">ANC, gaming-low-latency and call-ready audio for work and travel.</p></a>
-          <a class="product-card p-6" href="pages/products.html"><span class="text-4xl">🔋</span><h3 class="mt-8 text-2xl font-black">Power Banks</h3><p class="text-slate-400">Slim backup power with safety-tested cells and fast charging output.</p></a>
-          <a class="product-card p-6" href="pages/products.html"><span class="text-4xl">⌚</span><h3 class="mt-8 text-2xl font-black">Smart Watches</h3><p class="text-slate-400">Fitness, notifications, calls and daily health tracking for Android and iOS.</p></a>
-          <a class="product-card p-6" href="pages/products.html">
-  <span class="text-4xl">🎮</span>
-  <h3 class="mt-8 text-2xl font-black">Gaming Accessories</h3>
-  <p class="text-slate-400">Controllers, triggers, cooling fans and cables for smoother mobile gaming.</p>
-</a>
+        <p class="text-xs font-black uppercase tracking-widest text-cyan-300">Product Guidance</p>
+        <h2 class="mt-2 text-3xl font-black md:text-5xl text-white">Choose the right phone, not just the newest one.</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <article class="card-bento-hero">
+            <span class="badge-tag mb-3">iOS Flagship</span>
+            <h3 class="text-2xl font-black text-white mt-1">Apple iPhone Series</h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">Pro motion display, titanium design, cinematic video recording, and seamless MagSafe charging integration.</p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="spec-pill">A18 Pro</span><span class="spec-pill">120Hz</span><span class="spec-pill">MagSafe</span>
+            </div>
+          </article>
 
-<a class="product-card p-6" href="pages/products.html">
-  <span class="text-4xl">🖥️</span>
-  <h3 class="mt-8 text-2xl font-black">Monitors</h3>
-  <p class="text-slate-400">External displays for DeX-style work, streaming and desktop productivity.</p>
-</a>
+          <article class="card-bento-hero">
+            <span class="badge-tag mb-3">Android AI Power</span>
+            <h3 class="text-2xl font-black text-white mt-1">Samsung Galaxy Ultra</h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">Built-in S Pen, 200MP Quad Telephoto camera system, anti-reflective Gorilla Armor, and Galaxy AI productivity tools.</p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="spec-pill">200MP AI</span><span class="spec-pill">S-Pen</span><span class="spec-pill">45W Charge</span>
+            </div>
+          </article>
 
-<a class="product-card p-6" href="pages/products.html">
-  <span class="text-4xl">⌨️</span>
-  <h3 class="mt-8 text-2xl font-black">Keyboards</h3>
-  <p class="text-slate-400">Bluetooth and compact keyboards for tablets, phones and desk setups.</p>
-</a>
-
-<a class="product-card p-6" href="pages/products.html">
-  <span class="text-4xl">🖱️</span>
-  <h3 class="mt-8 text-2xl font-black">Mouse</h3>
-  <p class="text-slate-400">Wireless, ergonomic and gaming mice for portable workstations.</p>
-</a>
-
-<a class="product-card p-6" href="pages/products.html">
-  <span class="text-4xl">💻</span>
-  <h3 class="mt-8 text-2xl font-black">Laptops</h3>
-  <p class="text-slate-400">Performance devices with setup support, bags and charging bundles.</p>
-</a>
-
-
-
-
+          <article class="card-bento-hero">
+            <span class="badge-tag mb-3">Charging Gear</span>
+            <h3 class="text-2xl font-black text-white mt-1">GaN III Fast Power</h3>
+            <p class="mt-3 text-xs text-slate-300 leading-relaxed">Ultra-compact chargers that supply up to 100W Power Delivery without generating excess heat inside your battery.</p>
+            <div class="mt-6 flex flex-wrap gap-2">
+              <span class="spec-pill">100W PD</span><span class="spec-pill">GaN III</span><span class="spec-pill">Dual USB-C</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- Categories Section: Glassmorphic Glow Cards -->
     <section class="px-4 py-16">
-      <div class="mx-auto grid max-w-7xl gap-5 lg:grid-cols-3">
-        <article class="product-card lg:col-span-2"><div class="h-80 w-full overflow-hidden"><img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=1200&q=85" alt="Best-selling premium iPhone model"></div><div class="p-6"><p class="text-cyan-200">Best seller</p><h2 class="text-4xl font-black">iPhone 16 Pro Max</h2><p class="mt-3 text-slate-300">A premium choice for creators and business users with a bright display, pro camera system, high-capacity storage choices and carefully matched case, glass and charger bundles.</p></div></article>
-        <div class="grid gap-5">
-          <article class="product-card p-6"><h3 class="text-2xl font-black">Galaxy Buds Pro</h3><p class="mt-2 text-slate-400">Immersive sound, active noise cancellation, clear calls and a compact case for daily travel.</p><p class="mt-6 text-3xl font-black">$179</p></article>
-          <article class="product-card p-6"><h3 class="text-2xl font-black">65W GaN Charger</h3><p class="mt-2 text-slate-400">Pocket-sized power for phones, tablets and laptops with heat control and USB-C fast charging.</p><p class="mt-6 text-3xl font-black">$49</p></article>
+      <div class="mx-auto max-w-7xl">
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="badge-tag mb-2">Curated Tech Store</span>
+            <h2 class="text-3xl font-black text-white md:text-5xl">Explore Categories</h2>
+          </div>
+          <a href="pages/shop.html" class="btn-ghost text-xs">View Full Shop →</a>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <a class="card-glass-glow block" href="pages/shop.html">
+            <span class="text-4xl">📱</span>
+            <h3 class="mt-4 text-xl font-black text-white">Armor Cases</h3>
+            <p class="mt-1 text-xs text-slate-300">15ft drop tested, magnetic rings, clear silicon & carbon fiber.</p>
+            <span class="mt-4 inline-block text-xs font-bold text-cyan-300">Browse Cases →</span>
+          </a>
+          <a class="card-glass-glow block" href="pages/shop.html">
+            <span class="text-4xl">⚡</span>
+            <h3 class="mt-4 text-xl font-black text-white">GaN Chargers</h3>
+            <p class="mt-1 text-xs text-slate-300">USB-C PD 3.1 ultra fast chargers for phones & laptops.</p>
+            <span class="mt-4 inline-block text-xs font-bold text-cyan-300">Browse Chargers →</span>
+          </a>
+          <a class="card-glass-glow block" href="pages/shop.html">
+            <span class="text-4xl">🎧</span>
+            <h3 class="mt-4 text-xl font-black text-white">TWS Earbuds</h3>
+            <p class="mt-1 text-xs text-slate-300">Active noise cancelling and low-latency spatial audio.</p>
+            <span class="mt-4 inline-block text-xs font-bold text-cyan-300">Browse Audio →</span>
+          </a>
+          <a class="card-glass-glow block" href="pages/shop.html">
+            <span class="text-4xl">🛡️</span>
+            <h3 class="mt-4 text-xl font-black text-white">9H Screen Armor</h3>
+            <p class="mt-1 text-xs text-slate-300">Sapphire hardness glass with dust-free installer alignment tray.</p>
+            <span class="mt-4 inline-block text-xs font-bold text-cyan-300">Browse Screen Glass →</span>
+          </a>
         </div>
       </div>
     </section>
 
+    <!-- Services Section: Left Accent Pillar Cards -->
     <section class="px-4 py-16">
-      <div class="mx-auto max-w-7xl rounded-[2rem] border border-white/10 bg-white/[.04] p-6 md:p-10">
-        <h2 class="text-3xl font-black md:text-5xl">Store Services</h2>
-        <div class="mt-8 grid gap-4 md:grid-cols-4">
-          <div><h3 class="font-black">Screen replacement</h3><p class="text-slate-400">OLED, LCD and glass repairs with touch, color and face-unlock checks before delivery.</p></div><div><h3 class="font-black">Battery replacement</h3><p class="text-slate-400">High-cycle batteries fitted with charging, heat and standby drain testing.</p></div><div><h3 class="font-black">Water damage repair</h3><p class="text-slate-400">Board cleaning, inspection and recovery advice for phones exposed to liquid.</p></div><div><h3 class="font-black">Software update</h3><p class="text-slate-400">Backup, migration, OS update, account setup and restore support for new devices.</p></div>
+      <div class="mx-auto max-w-7xl">
+        <span class="badge-tag mb-3">On-Site Express Repairs</span>
+        <h2 class="text-3xl font-black text-white md:text-5xl mb-8">Expert Service Pillars</h2>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card-pillar-accent">
+            <span class="text-xs font-black text-cyan-300 uppercase">Pillar 01</span>
+            <h3 class="text-lg font-black text-white mt-2">Screen Replacement</h3>
+            <p class="mt-2 text-xs text-slate-300">Original OLED & glass assemblies replaced in 30 minutes with true-tone recalibration.</p>
+          </div>
+          <div class="card-pillar-accent violet">
+            <span class="text-xs font-black text-violet-400 uppercase">Pillar 02</span>
+            <h3 class="text-lg font-black text-white mt-2">Battery Health Swap</h3>
+            <p class="mt-2 text-xs text-slate-300">Certified high-cycle cells fitted with charge test and standby battery drain diagnostics.</p>
+          </div>
+          <div class="card-pillar-accent lime">
+            <span class="text-xs font-black text-lime-400 uppercase">Pillar 03</span>
+            <h3 class="text-lg font-black text-white mt-2">Water Damage Recovery</h3>
+            <p class="mt-2 text-xs text-slate-300">Ultrasonic board wash, corrosion cleaning, and data recovery for water-exposed phones.</p>
+          </div>
+          <div class="card-pillar-accent gold">
+            <span class="text-xs font-black text-yellow-400 uppercase">Pillar 04</span>
+            <h3 class="text-lg font-black text-white mt-2">Data & OS Migration</h3>
+            <p class="mt-2 text-xs text-slate-300">Complete transfer of photos, contacts, WhatsApp chats, and security setup for new phones.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Customer Reviews Section: Quote Bubble Cards -->
     <section class="px-4 py-16">
-      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-        <div><h2 class="text-3xl font-black md:text-5xl">Why Choose Us</h2><div class="mt-6 space-y-4 text-slate-300"><p>VoltEdge is built for practical phone shopping: clear comparisons, honest repair timelines, device trade-in help and quick pickup options for busy customers.</p><p>Our counter team tests every charger, cable, screen guard and repair before handoff, so you leave with products that work with your exact device.</p></div></div>
-        <div class="grid gap-4 sm:grid-cols-2"><blockquote class="glass rounded-3xl p-6">"Fast screen repair and the phone looked brand new."<cite class="mt-4 block text-cyan-200">Ava M.</cite></blockquote><blockquote class="glass rounded-3xl p-6">"Best place for genuine cases, chargers and honest buying advice."<cite class="mt-4 block text-cyan-200">Noah R.</cite></blockquote></div>
+      <div class="mx-auto max-w-7xl">
+        <h2 class="text-3xl font-black text-white md:text-5xl mb-8 text-center">Customer Testimonials</h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          <blockquote class="card-quote-bubble">
+            <div class="flex items-center gap-1 text-yellow-400 mb-3">★★★★★</div>
+            <p class="text-sm text-slate-200 italic leading-relaxed">"Replaced my cracked iPhone 16 screen in under 30 minutes. TrueTone and FaceID work perfectly. The team even fitted a glass protector for free!"</p>
+            <cite class="mt-4 block font-black text-cyan-300 not-italic">— Ava M., Verified Customer</cite>
+          </blockquote>
+          <blockquote class="card-quote-bubble">
+            <div class="flex items-center gap-1 text-yellow-400 mb-3">★★★★★</div>
+            <p class="text-sm text-slate-200 italic leading-relaxed">"The best place for genuine GaN fast chargers and MagSafe cases. They helped me pick the right 65W charger for my laptop and Galaxy S25."</p>
+            <cite class="mt-4 block font-black text-cyan-300 not-italic">— Noah R., Verified Buyer</cite>
+          </blockquote>
+        </div>
       </div>
     </section>
 
-    <section class="px-4 py-16">
-      <div class="mx-auto max-w-7xl"><div class="flex flex-wrap items-end justify-between gap-4"><h2 class="text-3xl font-black md:text-5xl">Store Gallery</h2><p class="max-w-xl text-slate-300">Real phone displays, accessories and service counters so the homepage feels like an actual mobile shop, not an illustrated concept page.</p></div><div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=85" alt="Smartphone on a clean surface"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=700&q=85" alt="Modern smartphone held in hand"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=700&q=85" alt="Smartphone product display"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=700&q=85" alt="Real mobile phone closeup"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=700&q=85" alt="Phone with accessories"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1585399000684-d2f72660f092?auto=format&fit=crop&w=700&q=85" alt="Phone repair and electronics workspace"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=85" alt="Wireless earbuds and phone accessories"><img class="h-64 rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1603539444875-76e7684265f6?auto=format&fit=crop&w=700&q=85" alt="Phone charging accessories"></div></div>
-    </section>
-
+    <!-- Interactive Form: Cyber Control Panel -->
     <section id="repair" class="px-4 py-16">
-      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2">
-        <form class="glass rounded-[2rem] p-6" data-form>
-          <h2 class="text-3xl font-black">Repair Enquiry</h2>
-          <div class="mt-6 grid gap-4"><input class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3" placeholder="Name" required><input class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3" placeholder="Phone" required><select class="rounded-2xl border border-white/10 bg-slate-900 px-4 py-3"><option>Screen replacement</option><option>Battery replacement</option><option>Water damage repair</option><option>Software update</option></select><textarea class="rounded-2xl border border-white/10 bg-white/5 px-4 py-3" rows="4" placeholder="Device model and issue"></textarea><button class="btn-primary" type="submit">Send request</button><p class="text-sm text-lime-200" data-form-notice></p></div>
+      <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-2 items-center">
+        <form class="panel-cyber-control" data-form>
+          <div class="flex items-center gap-3 mb-6">
+            <span class="text-2xl">🔧</span>
+            <div>
+              <h2 class="text-2xl font-black text-white">Book Repair Service</h2>
+              <p class="text-xs text-slate-300">Receive a guaranteed repair quote within 15 minutes.</p>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <input class="w-full rounded-xl border border-white/15 bg-slate-900 px-4 py-3 text-sm text-white focus:border-cyan-400 focus:outline-none" placeholder="Your Name" required>
+            <input class="w-full rounded-xl border border-white/15 bg-slate-900 px-4 py-3 text-sm text-white focus:border-cyan-400 focus:outline-none" placeholder="Phone Number" required>
+            <select class="w-full rounded-xl border border-white/15 bg-slate-900 px-4 py-3 text-sm text-white focus:border-cyan-400 focus:outline-none">
+              <option>Screen Replacement (OLED Glass)</option>
+              <option>Battery Replacement</option>
+              <option>Water Damage Treatment</option>
+              <option>Software Data Transfer</option>
+            </select>
+            <textarea class="w-full rounded-xl border border-white/15 bg-slate-900 px-4 py-3 text-sm text-white focus:border-cyan-400 focus:outline-none" rows="3" placeholder="Specify device model (iPhone 16, S25 Ultra, etc.)..."></textarea>
+            <div data-form-notice></div>
+            <button class="btn-primary w-full py-3.5 text-xs font-black uppercase tracking-wider" type="submit">Submit Repair Request →</button>
+          </div>
         </form>
-        <div class="overflow-hidden rounded-[2rem] border border-white/10"><iframe title="VoltEdge store map" class="h-full min-h-[26rem] w-full" loading="lazy" src="https://www.google.com/maps?q=New%20York%20mobile%20phone%20store&output=embed"></iframe></div>
+
+        <div class="overflow-hidden rounded-3xl border border-white/15 shadow-2xl h-full min-h-[300px]">
+          <iframe title="VoltEdge store map" class="h-full w-full min-h-[350px]" loading="lazy" src="https://www.google.com/maps?q=New%20York%20mobile%20phone%20store&output=embed"></iframe>
+        </div>
       </div>
     </section>
   </main>
 
-  <a class="float-cta btn-primary" href="tel:+1555019000">Call now</a>
+  
   <footer class="site-footer">
     <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
       <!-- Brand -->
@@ -259,7 +336,7 @@
     </div>
   </footer>
   <script src="assets/js/main.js"></script>
-<div class="fixed bottom-20 right-4 z-50 flex gap-2" data-mode-controls><button class="mode-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button><button class="rtl-toggle sans" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button></div></body>
+</body>
 </html>
 
 

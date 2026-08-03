@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoltEdge Charging & Repair Manual | Interactive Fast-Charge Calculator</title>
+  <meta name="description" content="Calculate phone charging speeds, GaN charger wattage needs, and battery health maintenance tips with VoltEdge Mobile tech guides.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl sticky top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
+      <a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white text-xl">
+        <span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient text-slate-950 font-black">V</span>
+        VoltEdge
+      </a>
+
+      <!-- Desktop Links (Home Dropdown ONLY) -->
+      <div class="hidden items-center gap-3.5 xl:gap-6 lg:flex text-xs xl:text-sm font-bold text-slate-200 whitespace-nowrap">
+        <div class="nav-dropdown-container">
+          <details class="nav-dropdown">
+            <summary class="nav-link font-extrabold text-cyan-300">Home</summary>
+            <div class="nav-dropdown-menu">
+              <a href="../index.html" class="block">Home 1: Flagship Tech Hub</a>
+              <a href="home-2.html" class="block">Home 2: Cyber Gamer Lounge</a>
+            </div>
+          </details>
+        </div>
+        <a class="nav-link hover:text-cyan-300" href="about.html">About</a>
+        <a class="nav-link hover:text-cyan-300" href="shop.html">Shop Gear</a>
+        <a class="nav-link hover:text-cyan-300" href="products.html">Phones</a>
+        <a class="nav-link hover:text-cyan-300" href="subscriptions.html">Protection Plans</a>
+        <a class="nav-link text-cyan-300 font-extrabold" href="repair-guide.html">Repair Guide</a>
+        <a class="nav-link hover:text-cyan-300" href="b2b.html">Corporate B2B</a>
+        <a class="nav-link hover:text-cyan-300" href="services.html">Services</a>
+        <a class="nav-link hover:text-cyan-300" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Navbar Actions (HTML 10 Inspired Controls) -->
+      <div class="navbar-actions">
+        <button class="theme-toggle hidden lg:inline-flex" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle hidden lg:inline-flex" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+        <a href="contact.html" class="btn-primary text-xs py-2 px-4 shadow-sm hidden sm:inline-flex">Book Repair</a>
+        <button class="rounded-full border border-white/15 px-3 py-2 text-sm lg:hidden text-white font-bold" data-menu-button aria-expanded="false">Menu ☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-2">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
+        <a href="../index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
+        <a href="home-2.html" class="block py-1 text-slate-400">Home 2: Urban Lounge</a>
+      </div>
+      <a href="about.html" class="py-1">About Us</a>
+      <a href="shop.html" class="py-1">Shop Accessories</a>
+      <a href="products.html" class="py-1">Smartphones</a>
+      <a href="subscriptions.html" class="py-1">Protection Plans</a>
+      <a href="repair-guide.html" class="py-1 text-cyan-300 font-bold">Charging & Repair Guide</a>
+      <a href="b2b.html" class="py-1">Corporate Bulk B2B</a>
+      <a href="services.html" class="py-1">Repair Services</a>
+      <a href="contact.html" class="py-1">Contact & Map</a>
+      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="px-4 py-16">
+    <div class="mx-auto max-w-7xl">
+      <!-- Title -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="badge-tag mb-3">Tech Diagnostics & Manual</span>
+        <h1 class="text-4xl md:text-6xl font-black text-white">Charging Wattage & Repair Guide</h1>
+        <p class="mt-4 text-slate-300 text-base">Learn how to maximize your battery life cycle, choose proper GaN power adapters, and estimate fast-charging times for your smartphone.</p>
+      </div>
+
+      <!-- Interactive Charging Speed Calculator -->
+      <div class="glass p-8 rounded-3xl max-w-4xl mx-auto mb-16 border border-cyan-400/30">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="text-3xl">⚡</span>
+          <div>
+            <h2 class="text-2xl font-black text-white">Interactive Fast-Charge Calculator</h2>
+            <p class="text-xs text-slate-300">Calculate charging duration based on adapter wattage and device battery capacity.</p>
+          </div>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 mb-6">
+          <div>
+            <label class="block text-xs font-bold text-cyan-300 mb-2 uppercase">Charger Wattage (Watts)</label>
+            <input type="number" data-calc-watts value="30" min="5" max="140" class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-cyan-400">
+            <p class="text-[10px] text-slate-400 mt-1">E.g., 20W Apple, 25W Samsung, 65W GaN, 100W Anker</p>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-cyan-300 mb-2 uppercase">Battery Capacity (mAh)</label>
+            <select data-calc-battery class="w-full bg-slate-900 border border-white/15 rounded-xl px-4 py-3 text-white text-sm">
+              <option value="3274">iPhone 16 Pro (3,274 mAh)</option>
+              <option value="4685">iPhone 16 Pro Max (4,685 mAh)</option>
+              <option value="5000" selected>Samsung Galaxy S25 Ultra (5,000 mAh)</option>
+              <option value="4700">Google Pixel 9 Pro (4,700 mAh)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 bg-slate-950/80 p-6 rounded-2xl border border-white/10">
+          <div>
+            <p class="text-xs text-slate-400 font-bold uppercase">Estimated Full Charge Time:</p>
+            <p data-calc-time class="text-3xl font-black text-cyan-300 mt-1">~ 62 mins (0 to 100%)</p>
+          </div>
+
+          <div>
+            <p class="text-xs text-slate-400 font-bold uppercase">Protocol Speed Rating:</p>
+            <p data-calc-speed class="text-lg font-bold text-emerald-400 mt-2">⚡ Fast Charge PD3.0</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Battery Health & Care Guides Grid -->
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="glass p-6 rounded-2xl">
+          <span class="text-xs font-black text-cyan-300 uppercase">Guide 01</span>
+          <h3 class="text-xl font-black text-white mt-2">The 80-20 Rule for Lithium Batteries</h3>
+          <p class="text-xs text-slate-300 mt-3 leading-relaxed">Keeping your lithium-ion battery between 20% and 80% charge level reduces chemical stress on cathode layers, doubling total cycle lifespan from 500 to 1,000 charge cycles.</p>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <span class="text-xs font-black text-cyan-300 uppercase">Guide 02</span>
+          <h3 class="text-xl font-black text-white mt-2">GaN vs Traditional Silicon Chargers</h3>
+          <p class="text-xs text-slate-300 mt-3 leading-relaxed">Gallium Nitride (GaN) semiconductors generate 40% less heat while conducting higher voltage, allowing ultra-compact 100W chargers that won't overheat your device.</p>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <span class="text-xs font-black text-cyan-300 uppercase">Guide 03</span>
+          <h3 class="text-xl font-black text-white mt-2">When to Swap Your Phone Battery</h3>
+          <p class="text-xs text-slate-300 mt-3 leading-relaxed">If your Maximum Capacity health drops below 80% or your phone throttles processor speeds during cold weather, visit VoltEdge for an original battery replacement in 30 minutes.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer px-4 py-16">
+    <div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <h3 class="text-2xl font-black text-white">VoltEdge Mobile</h3>
+        <p class="text-xs text-slate-400 mt-1">Certified Mobile Devices, Premium Accessories & Rapid Repairs</p>
+      </div>
+      <div class="flex gap-6 text-xs font-bold">
+        <a href="../index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="shop.html">Shop</a>
+        <a href="repair-guide.html" class="text-cyan-300">Repair Guide</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom mt-8 pt-6 text-center text-xs text-slate-500">
+      © <span data-year></span> VoltEdge Mobile Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

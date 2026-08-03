@@ -1,30 +1,195 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Phones & Accessories | VoltEdge Mobile</title><meta name="description" content="Browse premium smartphones, cases, chargers, earbuds, power banks and smart watches."><script src="https://cdn.tailwindcss.com"></script><link rel="stylesheet" href="../assets/css/style.css"><link rel="stylesheet" href="../assets/css/dark-mode.css"><link rel="stylesheet" href="../assets/css/rtl.css"></head><body><header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
-    <a href="../index.html" class="flex items-center gap-3 font-black tracking-wide"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a>
-    <button class="rounded-full border border-white/15 px-3 py-2 text-sm md:hidden" data-menu-button aria-expanded="false">Menu</button>
-    <div class="hidden items-center gap-7 md:flex">
-      <details class="nav-dropdown">
-        <summary class="nav-link">Home</summary>
-        <div class="nav-dropdown-menu">
-          <a href="../index.html">Home 1</a>
-          <a href="home-2.html">Home 2</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smartphones & Tech Catalog | VoltEdge Mobile</title>
+  <meta name="description" content="Browse flagship smartphones, cases, chargers, earbuds, power banks and certified mobile tech at VoltEdge Mobile.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl sticky top-0 z-50">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
+      <a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white text-xl">
+        <span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient text-slate-950 font-black">V</span>
+        VoltEdge
+      </a>
+
+      <!-- Desktop Links (Home Dropdown ONLY) -->
+      <div class="hidden items-center gap-3.5 xl:gap-6 lg:flex text-xs xl:text-sm font-bold text-slate-200 whitespace-nowrap">
+        <div class="nav-dropdown-container">
+          <details class="nav-dropdown">
+            <summary class="nav-link font-extrabold text-cyan-300">Home</summary>
+            <div class="nav-dropdown-menu">
+              <a href="../index.html" class="block">Home 1: Flagship Tech Hub</a>
+              <a href="home-2.html" class="block">Home 2: Cyber Gamer Lounge</a>
+            </div>
+          </details>
         </div>
-      </details>
-      <a class="nav-link" href="../pages/about.html">About</a>
-      <a class="nav-link" href="../pages/products.html">Products</a>
-      <a class="nav-link" href="../pages/services.html">Services</a>
-      <a class="nav-link" href="../pages/contact.html">Contact</a>
+        <a class="nav-link hover:text-cyan-300" href="about.html">About</a>
+        <a class="nav-link hover:text-cyan-300" href="shop.html">Shop Gear</a>
+        <a class="nav-link text-cyan-300 font-extrabold" href="products.html">Phones</a>
+        <a class="nav-link hover:text-cyan-300" href="subscriptions.html">Protection Plans</a>
+        <a class="nav-link hover:text-cyan-300" href="repair-guide.html">Repair Guide</a>
+        <a class="nav-link hover:text-cyan-300" href="b2b.html">Corporate B2B</a>
+        <a class="nav-link hover:text-cyan-300" href="services.html">Services</a>
+        <a class="nav-link hover:text-cyan-300" href="contact.html">Contact</a>
+      </div>
+
+      <!-- Navbar Actions (HTML 10 Inspired Controls) -->
+      <div class="navbar-actions">
+        <button class="theme-toggle hidden lg:inline-flex" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle hidden lg:inline-flex" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+        <a href="contact.html" class="btn-primary text-xs py-2 px-4 shadow-sm hidden sm:inline-flex">Book Repair</a>
+        <button class="rounded-full border border-white/15 px-3 py-2 text-sm lg:hidden text-white font-bold" data-menu-button aria-expanded="false">Menu ☰</button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-2">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
+        <a href="../index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
+        <a href="home-2.html" class="block py-1 text-slate-400">Home 2: Urban Lounge</a>
+      </div>
+      <a href="about.html" class="py-1">About Us</a>
+      <a href="shop.html" class="py-1">Shop Accessories</a>
+      <a href="products.html" class="py-1 text-cyan-300 font-bold">Smartphones</a>
+      <a href="subscriptions.html" class="py-1">Protection Plans</a>
+      <a href="repair-guide.html" class="py-1">Charging & Repair Guide</a>
+      <a href="b2b.html" class="py-1">Corporate Bulk B2B</a>
+      <a href="services.html" class="py-1">Repair Services</a>
+      <a href="contact.html" class="py-1">Contact & Map</a>
+      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      </div>
     </div>
-    <a href="../pages/contact.html" class="btn-primary hidden md:inline-flex">Repair enquiry</a>
-  </nav>
-  <div class="mobile-menu mx-4 mb-4 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 md:hidden" data-mobile-menu>
-    <a href="../index.html">Home 1</a><a href="home-2.html">Home 2</a><a href="../pages/about.html">About</a><a href="../pages/products.html">Products</a><a href="../pages/services.html">Services</a><a href="../pages/contact.html">Contact</a>
-  </div>
-</header><main class="px-4 py-16"><section class="mx-auto max-w-7xl"><h1 class="text-5xl font-black text-gradient">Products</h1>
+  </header>
+
+<main class="px-4 py-16"><section class="mx-auto max-w-7xl"><h1 class="text-5xl font-black text-gradient">Smartphones & Devices</h1>
 <p class="mt-4 text-lg text-slate-300 max-w-2xl">Explore our curated collection of premium smartphones, accessories, and bundles. Each product is hand‑picked for quality, performance, and style, ensuring you get the best value and experience.</p>
 <p class="mt-2 text-slate-300 max-w-2xl">Our selection features the latest flagship devices, durable cases, fast chargers, and high‑capacity power banks, all backed by expert support and warranty.</p>
-<p class="mt-6 text-slate-300 max-w-2xl">Browse our top picks below and discover the perfect accessory for your lifestyle.</p>
-<div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4"><a class="product-card" href="product-details.html"><img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=85" alt="Real iPhone 16 Pro product photo"><div class="p-5"><h2 class="text-xl font-black">iPhone 16 Pro</h2><p class="text-slate-400">256GB, titanium</p><p class="mt-4 font-black">$999</p></div></a><a class="product-card" href="product-details.html"><img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Real Samsung Galaxy series phone"><div class="p-5"><h2 class="text-xl font-black">Galaxy S Series</h2><p class="text-slate-400">AI camera phone</p><p class="mt-4 font-black">$899</p></div></a><article class="product-card"><img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=700&q=85" alt="Real phone with protective magnetic case"><div class="p-5"><h2 class="text-xl font-black">Magnetic Case</h2><p class="text-slate-400">Clear impact protection.</p><p class="mt-4 font-black">$39</p></div></article><article class="product-card"><img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1603539444875-76e7684265f6?auto=format&fit=crop&w=700&q=85" alt="Real power bank and charging accessories"><div class="p-5"><h2 class="text-xl font-black">Power Bank 20K</h2><p class="text-slate-400">Fast USB-C output.</p><p class="mt-4 font-black">$69</p></div></article></div></section></main><footer class="site-footer"><div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4"><div class="flex flex-col gap-5"><a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a><p class="text-slate-400 text-sm leading-relaxed">Your trusted partner for premium smartphones, certified accessories, and expert mobile repair services.</p><div class="footer-social flex gap-3"><a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div></div><div><h3 class="font-black text-white mb-5">Quick Links</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../index.html">Home</a></li><li><a href="../pages/about.html">About Us</a></li><li><a href="../pages/products.html">Products</a></li><li><a href="../pages/services.html">Services</a></li><li><a href="../pages/contact.html">Contact</a></li></ul></div><div><h3 class="font-black text-white mb-5">Products</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../pages/products.html">Smartphones</a></li><li><a href="../pages/products.html">Cases &amp; Covers</a></li><li><a href="../pages/products.html">Chargers</a></li><li><a href="../pages/products.html">Earbuds</a></li><li><a href="../pages/products.html">Power Banks</a></li></ul></div><div><h3 class="font-black text-white mb-5">Contact</h3><ul class="flex flex-col gap-4 text-sm text-slate-400"><li class="flex items-start gap-3"><svg class="mt-0.5 shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>123 Tech Street, New York, NY</li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg><a href="tel:+15550190000">(555) 019-0000</a></li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:hello@voltedge.com">hello@voltedge.com</a></li></ul></div></div><div class="footer-bottom"><p class="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-slate-500">© <span data-year></span> VoltEdge Mobile — Premium Phone Retail &amp; Repair. All rights reserved.</p></div></footer><script src="../assets/js/main.js"></script><div class="fixed bottom-20 right-4 z-50 flex gap-2" data-mode-controls><button class="mode-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button><button class="rtl-toggle sans" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button></div></body></html>
+<p class="mt-6 text-slate-300 max-w-2xl">Browse our top picks below and discover the perfect device for your lifestyle.</p>
+<div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+  <!-- Phone 1 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=85" alt="Apple iPhone 16 Pro Max">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Apple Flagship</span>
+      <h2 class="text-xl font-black text-white mt-1">iPhone 16 Pro Max</h2>
+      <p class="text-xs text-slate-400">256GB / 512GB, Grade 5 Titanium</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$1,199</p>
+    </div>
+  </a>
+
+  <!-- Phone 2 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Samsung Galaxy S25 Ultra">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Samsung AI</span>
+      <h2 class="text-xl font-black text-white mt-1">Galaxy S25 Ultra 5G</h2>
+      <p class="text-xs text-slate-400">200MP Camera, S Pen, Snapdragon 8 Gen 4</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$1,299</p>
+    </div>
+  </a>
+
+  <!-- Phone 3 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="Google Pixel 9 Pro XL">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Google Tensor</span>
+      <h2 class="text-xl font-black text-white mt-1">Google Pixel 9 Pro XL</h2>
+      <p class="text-xs text-slate-400">Gemini AI, Super Res Zoom, 120Hz LTPO</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$999</p>
+    </div>
+  </a>
+
+  <!-- Phone 4 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=700&q=85" alt="OnePlus 13 5G">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Hasselblad Camera</span>
+      <h2 class="text-xl font-black text-white mt-1">OnePlus 13 5G</h2>
+      <p class="text-xs text-slate-400">100W SUPERVOOC Charge, 16GB RAM</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$799</p>
+    </div>
+  </a>
+
+  <!-- Phone 5 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=700&q=85" alt="Xiaomi 15 Ultra">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Leica Optics</span>
+      <h2 class="text-xl font-black text-white mt-1">Xiaomi 15 Ultra</h2>
+      <p class="text-xs text-slate-400">1-inch Quad Camera, 90W Fast Charge</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$899</p>
+    </div>
+  </a>
+
+  <!-- Phone 6 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85" alt="Nothing Phone (2a)">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Glyph Interface</span>
+      <h2 class="text-xl font-black text-white mt-1">Nothing Phone (2a)</h2>
+      <p class="text-xs text-slate-400">Transparent Cyber Back, 50MP Dual Camera</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$449</p>
+    </div>
+  </a>
+
+  <!-- Phone 7 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=700&q=85" alt="Motorola Edge 50 Pro">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Pantone Color</span>
+      <h2 class="text-xl font-black text-white mt-1">Motorola Edge 50 Pro</h2>
+      <p class="text-xs text-slate-400">144Hz Curved pOLED, 125W TurboPower</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$599</p>
+    </div>
+  </a>
+
+  <!-- Phone 8 -->
+  <a class="product-card" href="product-details.html">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=700&q=85" alt="Asus ROG Phone 8 Pro">
+    <div class="p-5">
+      <span class="text-xs font-black text-cyan-300 uppercase">Gaming Monster</span>
+      <h2 class="text-xl font-black text-white mt-1">Asus ROG Phone 8 Pro</h2>
+      <p class="text-xs text-slate-400">165Hz Display, AniMe Vision, AirTrigger</p>
+      <p class="mt-4 font-black text-cyan-300 text-lg">$1,099</p>
+    </div>
+  </a>
+</div></section></main>
+
+  <footer class="site-footer px-4 py-16">
+    <div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <h3 class="text-2xl font-black text-white">VoltEdge Mobile</h3>
+        <p class="text-xs text-slate-400 mt-1">Certified Mobile Devices, Premium Accessories & Rapid Repairs</p>
+      </div>
+      <div class="flex gap-6 text-xs font-bold">
+        <a href="../index.html">Home 1</a>
+        <a href="home-2.html">Home 2</a>
+        <a href="shop.html">Shop</a>
+        <a href="products.html" class="text-cyan-300">Phones</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom mt-8 pt-6 text-center text-xs text-slate-500">
+      © <span data-year></span> VoltEdge Mobile Inc. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
 
 
 

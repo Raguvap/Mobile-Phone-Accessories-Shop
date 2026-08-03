@@ -82,8 +82,18 @@ blockquote {
   color: transparent;
 }
 
-.nav-link { color: #c8d3e2; transition: color .2s ease; }
+.nav-link { 
+  color: #c8d3e2; 
+  white-space: nowrap; 
+  transition: color .2s ease; 
+}
 .nav-link:hover, .nav-link[aria-current="page"] { color: white; }
+
+.site-header a,
+.site-header summary,
+.site-header span {
+  white-space: nowrap;
+}
 
 .nav-dropdown {
   position: relative;
@@ -143,7 +153,19 @@ blockquote {
 .nav-dropdown[open] .nav-dropdown-menu {
   opacity: 1;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0) scale(1);
+  animation: dropdownPop 0.28s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes dropdownPop {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-12px) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+  }
 }
 
 .nav-dropdown-menu a {
@@ -151,16 +173,241 @@ blockquote {
   color: #d8e4f3;
   font-weight: 800;
   padding: .75rem .85rem;
+  transition: all 0.2s ease;
 }
 
 .nav-dropdown-menu a:hover {
-  background: rgba(255, 255, 255, .08);
-  color: white;
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+  transform: translateX(4px);
+}
+
+/* Animated Mobile Drawer */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.mobile-menu.is-active,
+.mobile-menu[style*="display: flex"] {
+  display: flex !important;
+  animation: drawerSlideDown 0.32s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes drawerSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 .mobile-menu a {
   color: #e5eefb;
   font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.mobile-menu a:hover {
+  color: #22d3ee;
+  padding-left: 6px;
+}
+
+/* Navbar Action Controls (HTML 10 Inspired Placement) */
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.theme-toggle {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s ease;
+}
+
+.theme-toggle:hover {
+  background: #22d3ee;
+  color: #050816;
+  border-color: #22d3ee;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(34, 211, 238, 0.4);
+}
+
+.rtl-toggle.theme-toggle {
+  width: auto;
+  padding: 0 14px;
+  height: 38px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  border-radius: 50px;
+}
+
+/* Badge Tags & Shop Cards */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  background: rgba(34, 211, 238, 0.15);
+  color: #67e8f9;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+/* Distinct Section Card Designs */
+
+@keyframes shineSwipe {
+  0% { transform: translate(-40%, -40%) rotate(30deg); }
+  100% { transform: translate(40%, 40%) rotate(30deg); }
+}
+
+/* Section A: Glassmorphic Glow Cards (Products) */
+.card-glass-glow {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 2px solid rgba(34, 211, 238, 0.6);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.3);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-glass-glow::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 45%, rgba(34, 211, 238, 0.12) 50%, transparent 55%);
+  opacity: 0;
+  pointer-events: none;
+}
+.card-glass-glow:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: rgba(34, 211, 238, 0.7);
+  box-shadow: 0 24px 50px rgba(34, 211, 238, 0.25);
+}
+.card-glass-glow:hover::after {
+  opacity: 1;
+  animation: shineSwipe 0.85s ease forwards;
+}
+
+/* Section B: Neomorphic Brand Tiles */
+.brand-tile-neo {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  text-align: center;
+  font-weight: 800;
+  color: #f8fbff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.brand-tile-neo:hover {
+  border-color: #8b5cf6;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(15, 23, 42, 0.85));
+  color: #ffffff;
+  transform: scale(1.06) translateY(-3px);
+  box-shadow: 0 12px 28px rgba(139, 92, 246, 0.3);
+}
+
+/* Section C: Asymmetric Bento Grid Cards */
+.card-bento-hero {
+  background: linear-gradient(145deg, #0d1527, #060b18);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.75rem;
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.35);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-bento-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.22), transparent 70%);
+  pointer-events: none;
+  transition: transform 0.4s ease;
+}
+.card-bento-hero:hover {
+  border-color: rgba(34, 211, 238, 0.6);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 28px 60px rgba(34, 211, 238, 0.2);
+}
+.card-bento-hero:hover::before {
+  transform: scale(1.4);
+}
+
+/* Section D: Left Accent Pillar Cards */
+.card-pillar-accent {
+  background: rgba(13, 20, 36, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 5px solid #22d3ee;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.card-pillar-accent.violet { border-left-color: #8b5cf6; }
+.card-pillar-accent.lime { border-left-color: #a3e635; }
+.card-pillar-accent.gold { border-left-color: #f59e0b; }
+
+.card-pillar-accent:hover {
+  transform: translateX(6px);
+  background: rgba(20, 30, 54, 0.85);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Section E: Quote Bubble Cards */
+.card-quote-bubble {
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 2rem;
+  padding: 1.75rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transition: all 0.3s ease;
+}
+.card-quote-bubble:hover {
+  border-color: rgba(139, 92, 246, 0.5);
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.2);
+}
+
+/* Section F: Cyber Control Panels */
+.panel-cyber-control {
+  background: linear-gradient(180deg, rgba(10, 16, 32, 0.95), rgba(5, 8, 22, 0.98));
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .btn-primary {
@@ -201,6 +448,23 @@ blockquote {
   transition: transform .25s ease, border-color .25s ease;
 }
 .product-card:hover { transform: translateY(-8px); border-color: rgba(34, 211, 238, .55); }
+
+/* Shop Card with Spacious Padding */
+.shop-card {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.25);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.shop-card:hover {
+  transform: translateY(-8px) scale(1.015);
+  border-color: rgba(34, 211, 238, 0.6);
+  box-shadow: 0 24px 50px rgba(34, 211, 238, 0.22);
+}
 
 .feature-band {
   background:
@@ -313,6 +577,12 @@ section {
   .glass,
   .product-card {
     border-radius: 1.25rem;
+  }
+
+  .navbar-actions .theme-toggle,
+  .navbar-actions .rtl-toggle,
+  .navbar-actions .btn-primary {
+    display: none !important;
   }
 }
 
