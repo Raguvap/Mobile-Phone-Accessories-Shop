@@ -11,7 +11,8 @@
   <link rel="stylesheet" href="../assets/css/rtl.css">
 </head>
 <body>
-<header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl">
+
+<header class="site-header border-b border-white/10 bg-slate-950/80 px-4 py-4 backdrop-blur-xl" style="position:relative;z-index:50;">
   <nav class="mx-auto flex max-w-7xl items-center justify-between" aria-label="Main navigation">
     <a href="../index.html" class="flex items-center gap-3 font-black tracking-wide"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a>
     <button class="rounded-full border border-white/15 px-3 py-2 text-sm md:hidden" data-menu-button aria-expanded="false">Menu</button>
@@ -23,107 +24,209 @@
           <a href="home-2.html">Home 2</a>
         </div>
       </details>
-      <a class="nav-link" href="../pages/about.html">About</a>
-      <a class="nav-link" href="../pages/products.html">Products</a>
-      <a class="nav-link" href="../pages/services.html">Services</a>
-      <a class="nav-link" href="../pages/contact.html">Contact</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="products.html">Products</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="contact.html">Contact</a>
     </div>
-    <a href="../pages/contact.html" class="btn-primary hidden md:inline-flex">Repair enquiry</a>
+    <a href="contact.html" class="btn-primary hidden md:inline-flex">Repair enquiry</a>
   </nav>
   <div class="mobile-menu mx-4 mb-4 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 md:hidden" data-mobile-menu>
-    <a href="../index.html">Home 1</a><a href="home-2.html">Home 2</a><a href="../pages/about.html">About</a><a href="../pages/products.html">Products</a><a href="../pages/services.html">Services</a><a href="../pages/contact.html">Contact</a>
+    <a href="../index.html">Home 1</a><a href="home-2.html">Home 2</a><a href="about.html">About</a><a href="products.html">Products</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
   </div>
 </header>
 
 <main>
-  <section class="px-4 pb-16 pt-20">
-    <div class="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
-      <div>
-        <p class="text-sm font-black uppercase tracking-[.22em] text-lime-200">Bundle offers</p>
-        <h1 class="mt-3 text-5xl font-black leading-tight text-gradient md:text-7xl">Phones, accessories and trade-in deals in one visit.</h1>
-        <p class="mt-6 text-lg leading-8 text-slate-300">Home 2 is built like a promotion page. It highlights limited-time phone bundles, upgrade offers, pickup steps and trade-in support for customers who already know they want to buy today.</p>
-        <div class="mt-8 flex flex-wrap gap-3"><a class="btn-primary" href="products.html">View today deals</a><a class="btn-ghost" href="contact.html">Check trade-in value</a></div>
-        <dl class="mt-10 grid max-w-xl grid-cols-3 gap-3">
-          <div class="stat-tile"><dt>$120</dt><dd>Bundle savings</dd></div>
-          <div class="stat-tile"><dt>30 min</dt><dd>Pickup setup</dd></div>
-          <div class="stat-tile"><dt>0%</dt><dd>Installment options</dd></div>
-        </dl>
+
+  <!-- FULL-WIDTH CINEMATIC HERO with overlay -->
+  <section class="relative h-[92vh] min-h-[560px] overflow-hidden">
+    <img class="absolute inset-0 h-full w-full object-cover" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1800&q=90" alt="Premium smartphones on display">
+    <div class="absolute inset-0" style="background:linear-gradient(120deg,rgba(5,8,22,.92) 40%,rgba(5,8,22,.45) 100%)"></div>
+    <div class="relative z-10 flex h-full flex-col justify-center px-6 md:px-16 max-w-3xl">
+      <span class="inline-flex w-fit rounded-full border border-lime-300/40 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-lime-300">Limited time deals</span>
+      <h1 class="mt-5 text-6xl font-black leading-[1.02] text-white md:text-8xl">Upgrade.<br>Trade in.<br><span class="text-gradient">Save big.</span></h1>
+      <p class="mt-6 max-w-xl text-xl text-slate-300">Bring your old phone, walk out with a new one — fully set up, cased and charged. Same-day bundles starting from $149.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a class="btn-primary" href="products.html">Browse deals</a>
+        <a class="btn-ghost" href="contact.html">Check trade-in value</a>
       </div>
-      <div class="feature-band p-4 md:p-6">
-        <img class="h-96 w-full rounded-[1.5rem] object-cover" src="https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=1100&q=85" alt="Customer holding a smartphone during an upgrade purchase">
-        <div class="mt-4 grid gap-4 sm:grid-cols-3">
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-sm text-cyan-200">Starter kit</p><h2 class="mt-2 text-xl font-black">Phone + case + glass</h2><p class="mt-3 text-sm text-slate-400">Protected before you leave.</p></div>
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-sm text-cyan-200">Power kit</p><h2 class="mt-2 text-xl font-black">Charger + cable + bank</h2><p class="mt-3 text-sm text-slate-400">Fast charging bundle.</p></div>
-          <div class="rounded-2xl bg-white/10 p-4"><p class="text-sm text-cyan-200">Audio kit</p><h2 class="mt-2 text-xl font-black">Earbuds + warranty</h2><p class="mt-3 text-sm text-slate-400">Calls, music and commute.</p></div>
+    </div>
+    <!-- floating stat bar -->
+    
+  </section>
+
+  <!-- HORIZONTAL SCROLL DEAL CARDS -->
+  <section class="py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="flex items-end justify-between gap-4 flex-wrap">
+        <h2 class="text-3xl font-black md:text-5xl">Today's Hot Deals</h2>
+        <a href="products.html" class="text-cyan-400 font-bold text-sm hover:text-cyan-300">View all &rarr;</a>
+      </div>
+    </div>
+    <div class="mt-8 flex gap-5 overflow-x-auto px-4 pb-4 md:px-8 snap-x snap-mandatory" style="scrollbar-width:none">
+      <article class="snap-start shrink-0 w-72 md:w-80 rounded-[1.5rem] overflow-hidden border border-white/10" style="background:rgba(255,255,255,.05)">
+        <div class="relative"><img class="h-52 w-full object-cover" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=700&q=85" alt="iPhone 16 Pro"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black" style="background:linear-gradient(135deg,#22d3ee,#8b5cf6)">Save $120</span></div>
+        <div class="p-5"><p class="text-xs font-black uppercase tracking-widest text-cyan-300">Apple</p><h3 class="mt-1 text-xl font-black">iPhone 16 Pro Pack</h3><p class="mt-2 text-sm text-slate-400">Phone + MagSafe case + tempered glass + USB-C charger</p><div class="mt-4 flex items-center justify-between"><span class="text-2xl font-black">$999</span><a href="product-details.html" class="btn-primary py-2 px-4 text-sm">Buy now</a></div></div>
+      </article>
+      <article class="snap-start shrink-0 w-72 md:w-80 rounded-[1.5rem] overflow-hidden border border-white/10" style="background:rgba(255,255,255,.05)">
+        <div class="relative"><img class="h-52 w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Galaxy S25"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black" style="background:linear-gradient(135deg,#22d3ee,#8b5cf6)">Best value</span></div>
+        <div class="p-5"><p class="text-xs font-black uppercase tracking-widest text-cyan-300">Samsung</p><h3 class="mt-1 text-xl font-black">Galaxy S25 Bundle</h3><p class="mt-2 text-sm text-slate-400">Phone + rugged case + screen guard + data transfer</p><div class="mt-4 flex items-center justify-between"><span class="text-2xl font-black">$899</span><a href="product-details.html" class="btn-primary py-2 px-4 text-sm">Buy now</a></div></div>
+      </article>
+      <article class="snap-start shrink-0 w-72 md:w-80 rounded-[1.5rem] overflow-hidden border border-white/10" style="background:rgba(255,255,255,.05)">
+        <div class="relative"><img class="h-52 w-full object-cover" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="Pixel 9 Pro"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black" style="background:linear-gradient(135deg,#a3e635,#22d3ee)">New in</span></div>
+        <div class="p-5"><p class="text-xs font-black uppercase tracking-widest text-cyan-300">Google</p><h3 class="mt-1 text-xl font-black">Pixel 9 Pro Deal</h3><p class="mt-2 text-sm text-slate-400">Phone + wireless charger + slim case + setup support</p><div class="mt-4 flex items-center justify-between"><span class="text-2xl font-black">$799</span><a href="product-details.html" class="btn-primary py-2 px-4 text-sm">Buy now</a></div></div>
+      </article>
+      <article class="snap-start shrink-0 w-72 md:w-80 rounded-[1.5rem] overflow-hidden border border-white/10" style="background:rgba(255,255,255,.05)">
+        <div class="relative"><img class="h-52 w-full object-cover" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=700&q=85" alt="Audio bundle"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black" style="background:linear-gradient(135deg,#8b5cf6,#ec4899)">Add-on</span></div>
+        <div class="p-5"><p class="text-xs font-black uppercase tracking-widest text-cyan-300">Accessories</p><h3 class="mt-1 text-xl font-black">Audio + Power Combo</h3><p class="mt-2 text-sm text-slate-400">ANC earbuds + 20K power bank + braided cable</p><div class="mt-4 flex items-center justify-between"><span class="text-2xl font-black">$149</span><a href="product-details.html" class="btn-primary py-2 px-4 text-sm">Buy now</a></div></div>
+      </article>
+      <article class="snap-start shrink-0 w-72 md:w-80 rounded-[1.5rem] overflow-hidden border border-white/10" style="background:rgba(255,255,255,.05)">
+        <div class="relative"><img class="h-52 w-full object-cover" src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=700&q=85" alt="OnePlus 13"><span class="absolute top-3 left-3 rounded-full px-3 py-1 text-xs font-black" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">Hot pick</span></div>
+        <div class="p-5"><p class="text-xs font-black uppercase tracking-widest text-cyan-300">OnePlus</p><h3 class="mt-1 text-xl font-black">OnePlus 13 Starter</h3><p class="mt-2 text-sm text-slate-400">Phone + 100W charger + case + screen protector</p><div class="mt-4 flex items-center justify-between"><span class="text-2xl font-black">$699</span><a href="product-details.html" class="btn-primary py-2 px-4 text-sm">Buy now</a></div></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SPLIT SECTION — image LEFT, text RIGHT -->
+  <section class="px-4 py-16">
+    <div class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10">
+      <div class="grid lg:grid-cols-2">
+        <img class="h-full min-h-[22rem] w-full object-cover" src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?auto=format&fit=crop&w=900&q=85" alt="Phone trade-in counter">
+        <div class="flex flex-col justify-center gap-6 p-8 md:p-12" style="background:rgba(255,255,255,.04)">
+          <span class="w-fit rounded-full border border-lime-300/40 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-lime-300">Trade-in counter</span>
+          <h2 class="text-4xl font-black md:text-5xl">Your old phone is worth more than you think.</h2>
+          <p class="text-lg text-slate-300 leading-8">Bring any working smartphone. We run a full condition check — screen, battery, camera, charging port — and give you an instant credit offer. Apply it to any phone or bundle in store.</p>
+          <ul class="grid gap-3 sm:grid-cols-2">
+            <li class="flex items-start gap-3"><span class="mt-1 text-cyan-400">&#10003;</span><span class="text-sm text-slate-300">On-the-spot assessment</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 text-cyan-400">&#10003;</span><span class="text-sm text-slate-300">Up to $300 credit</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 text-cyan-400">&#10003;</span><span class="text-sm text-slate-300">Secure data wipe</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 text-cyan-400">&#10003;</span><span class="text-sm text-slate-300">All brands accepted</span></li>
+          </ul>
+          <a href="contact.html" class="btn-primary w-fit">Book trade-in</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- BOLD PROMO BANNER -->
+  <section class="px-4 py-6">
+    <div class="mx-auto max-w-7xl rounded-[2rem] overflow-hidden relative" style="background:linear-gradient(135deg,#0891b2,#7c3aed 50%,#a3e635)">
+      <div class="absolute inset-0 opacity-10" style="background:url('https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1400&q=60') center/cover"></div>
+      <div class="relative z-10 flex flex-wrap items-center justify-between gap-6 p-8 md:p-12">
+        <div>
+          <p class="text-sm font-black uppercase tracking-widest text-white/70">This week only</p>
+          <h2 class="mt-2 text-4xl font-black text-white md:text-5xl">Free setup on every<br>phone purchase.</h2>
+          <p class="mt-3 text-white/80">Data transfer, account setup, case fitting and screen glass — all included at no extra cost.</p>
+        </div>
+        <a href="products.html" class="shrink-0 rounded-full bg-white px-8 py-4 font-black text-slate-900 hover:bg-slate-100 transition-colors">Claim offer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPLIT SECTION — text LEFT, image RIGHT (flipped) -->
+  <section class="px-4 py-16">
+    <div class="mx-auto max-w-7xl overflow-hidden rounded-[2rem] border border-white/10">
+      <div class="grid lg:grid-cols-2">
+        <div class="flex flex-col justify-center gap-6 p-8 md:p-12 order-2 lg:order-1" style="background:rgba(255,255,255,.04)">
+          <span class="w-fit rounded-full border border-cyan-300/40 px-4 py-1.5 text-xs font-black uppercase tracking-widest text-cyan-300">Bundle builder</span>
+          <h2 class="text-4xl font-black md:text-5xl">Pick a pack built for how you actually use your phone.</h2>
+          <p class="text-lg text-slate-300 leading-8">Every bundle is assembled around a real use case — not just random accessories. Creator, student, traveller or business user, we have a ready-to-go kit.</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black text-sm">&#127775; Creator Pack</h3><p class="mt-1 text-xs text-slate-400">Pro phone, grip, fast charger, storage upgrade</p></div>
+            <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black text-sm">&#127979; Student Pack</h3><p class="mt-1 text-xs text-slate-400">Value phone, rugged case, earbuds, screen glass</p></div>
+            <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black text-sm">&#9992;&#65039; Travel Pack</h3><p class="mt-1 text-xs text-slate-400">Power bank, GaN charger, cable kit, earbuds</p></div>
+            <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black text-sm">&#128188; Business Pack</h3><p class="mt-1 text-xs text-slate-400">Dual-SIM, data migration, warranty, car charger</p></div>
+          </div>
+          <a href="products.html" class="btn-ghost w-fit">See all bundles</a>
+        </div>
+        <img class="h-full min-h-[22rem] w-full object-cover order-1 lg:order-2" src="https://images.unsplash.com/photo-1603539444875-76e7684265f6?auto=format&fit=crop&w=900&q=85" alt="Phone accessories bundle">
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS — horizontal timeline -->
   <section class="px-4 py-16">
     <div class="mx-auto max-w-7xl">
-      <div class="flex flex-wrap items-end justify-between gap-4">
-        <h2 class="text-3xl font-black md:text-5xl">Today&apos;s Deal Picks</h2>
-        <p class="max-w-xl text-slate-300">A different homepage for offers, upgrades and ready-to-buy customers.</p>
+      <div class="text-center mb-12">
+        <p class="text-sm font-black uppercase tracking-[.22em] text-cyan-200">Simple process</p>
+        <h2 class="mt-3 text-3xl font-black md:text-5xl">From walk-in to walk-out in 3 steps.</h2>
       </div>
-      <div class="mt-8 grid gap-5 md:grid-cols-3">
-        <article class="product-card"><img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=800&q=85" alt="Premium iPhone deal"><div class="p-6"><span class="spec-pill">Save $120</span><h3 class="mt-5 text-2xl font-black">iPhone Pro Upgrade Pack</h3><p class="mt-3 text-slate-400">Includes phone setup, tempered glass, MagSafe case and USB-C fast charger.</p><p class="mt-5 text-3xl font-black">$999</p></div></article>
-        <article class="product-card"><img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=800&q=85" alt="Android phone bundle deal"><div class="p-6"><span class="spec-pill">Best value</span><h3 class="mt-5 text-2xl font-black">Galaxy Daily Driver Bundle</h3><p class="mt-3 text-slate-400">AI camera phone with rugged case, screen guard and data transfer support.</p><p class="mt-5 text-3xl font-black">$899</p></div></article>
-        <article class="product-card"><img class="h-56 w-full object-cover" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=800&q=85" alt="Earbuds and phone accessory bundle"><div class="p-6"><span class="spec-pill">Add-on offer</span><h3 class="mt-5 text-2xl font-black">Audio + Power Combo</h3><p class="mt-3 text-slate-400">Wireless earbuds, power bank and braided cable for travel and work.</p><p class="mt-5 text-3xl font-black">$149</p></div></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="px-4 py-16">
-    <div class="mx-auto grid max-w-7xl gap-5 lg:grid-cols-4">
-      <div class="lg:col-span-1"><p class="text-cyan-200">How pickup works</p><h2 class="mt-3 text-3xl font-black md:text-5xl">Reserve, setup, leave ready.</h2></div>
-      <article class="glass rounded-3xl p-6"><span class="spec-pill">01</span><h3 class="mt-5 text-xl font-black">Choose a deal</h3><p class="mt-3 text-slate-400">Select the phone and accessory bundle that matches your budget.</p></article>
-      <article class="glass rounded-3xl p-6"><span class="spec-pill">02</span><h3 class="mt-5 text-xl font-black">Bring old phone</h3><p class="mt-3 text-slate-400">We inspect trade-in value, backup and transfer your important data.</p></article>
-      <article class="glass rounded-3xl p-6"><span class="spec-pill">03</span><h3 class="mt-5 text-xl font-black">Pickup complete</h3><p class="mt-3 text-slate-400">Leave with case, glass, charger and accounts already checked.</p></article>
-    </div>
-  </section>
-
-  <section class="px-4 py-16">
-    <div class="feature-band mx-auto grid max-w-7xl gap-8 p-6 md:p-10 lg:grid-cols-2 lg:items-center">
-      <div>
-        <p class="text-sm font-black uppercase tracking-[.22em] text-lime-200">Trade-in counter</p>
-        <h2 class="mt-3 text-3xl font-black md:text-5xl">Turn your old phone into instant upgrade credit.</h2>
-        <p class="mt-5 text-lg leading-8 text-slate-300">Home 2 gives customers a buying path: bring the old device, get a condition check, apply credit to a phone bundle, then complete setup in store.</p>
-        <div class="mt-7 grid gap-3 sm:grid-cols-2">
-          <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black">Condition check</h3><p class="mt-2 text-sm text-slate-400">Display, battery, camera, charging port and body inspected.</p></div>
-          <div class="rounded-2xl border border-white/10 p-4"><h3 class="font-black">Secure transfer</h3><p class="mt-2 text-sm text-slate-400">Photos, contacts and apps moved before reset support.</p></div>
+      <div class="grid gap-0 md:grid-cols-3 relative">
+        <!-- connector line -->
+        <div class="hidden md:block absolute top-10 left-[16.66%] right-[16.66%] h-px bg-gradient-to-r from-cyan-500 via-violet-500 to-lime-400"></div>
+        <div class="flex flex-col items-center text-center px-6 pb-8">
+          <div class="relative z-10 grid h-20 w-20 place-items-center rounded-full text-3xl font-black text-white" style="background:linear-gradient(135deg,#22d3ee,#8b5cf6)">1</div>
+          <h3 class="mt-6 text-xl font-black">Choose your deal</h3>
+          <p class="mt-3 text-slate-400">Browse phones and bundles online or in store. Tell us your budget and daily use.</p>
+        </div>
+        <div class="flex flex-col items-center text-center px-6 pb-8">
+          <div class="relative z-10 grid h-20 w-20 place-items-center rounded-full text-3xl font-black text-white" style="background:linear-gradient(135deg,#8b5cf6,#a3e635)">2</div>
+          <h3 class="mt-6 text-xl font-black">Trade in & transfer</h3>
+          <p class="mt-3 text-slate-400">We assess your old phone, apply credit and move all your data securely.</p>
+        </div>
+        <div class="flex flex-col items-center text-center px-6 pb-8">
+          <div class="relative z-10 grid h-20 w-20 place-items-center rounded-full text-3xl font-black text-white" style="background:linear-gradient(135deg,#a3e635,#22d3ee)">3</div>
+          <h3 class="mt-6 text-xl font-black">Leave fully ready</h3>
+          <p class="mt-3 text-slate-400">Case fitted, glass on, accounts set up, charger in the bag. Done.</p>
         </div>
       </div>
-      <img class="h-96 w-full rounded-[2rem] object-cover" src="https://images.unsplash.com/photo-1585399000684-d2f72660f092?auto=format&fit=crop&w=1000&q=85" alt="Phone inspection and setup workspace">
     </div>
   </section>
 
+  <!-- TESTIMONIALS — horizontal cards -->
   <section class="px-4 py-16">
     <div class="mx-auto max-w-7xl">
-      <div class="flex flex-wrap items-end justify-between gap-4">
-        <h2 class="text-3xl font-black md:text-5xl">Bundle Builder</h2>
-        <p class="max-w-xl text-slate-300">Pick a phone pack by use case. This section is unique to Home 2 and avoids repeating Home 1 categories.</p>
-      </div>
-      <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="product-card p-6"><h3 class="text-2xl font-black">Creator Pack</h3><p class="mt-3 text-slate-400">Pro phone, storage upgrade, tripod grip and fast charger.</p></article>
-        <article class="product-card p-6"><h3 class="text-2xl font-black">Student Pack</h3><p class="mt-3 text-slate-400">Value phone, rugged case, earbuds and screen protection.</p></article>
-        <article class="product-card p-6"><h3 class="text-2xl font-black">Travel Pack</h3><p class="mt-3 text-slate-400">Power bank, GaN charger, cable kit and compact earbuds.</p></article>
-        <article class="product-card p-6"><h3 class="text-2xl font-black">Business Pack</h3><p class="mt-3 text-slate-400">Dual-SIM support, data migration, warranty and car charger.</p></article>
+      <h2 class="text-3xl font-black md:text-4xl mb-8">What customers say</h2>
+      <div class="grid gap-5 md:grid-cols-3">
+        <blockquote class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex gap-1 text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-slate-300 leading-7">"Traded in my old Galaxy, got $220 credit and walked out with a new iPhone fully set up in under an hour. Incredible service."</p>
+          <cite class="not-italic"><span class="font-black text-white block">Marcus T.</span><span class="text-sm text-slate-400">iPhone 16 Pro buyer</span></cite>
+        </blockquote>
+        <blockquote class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex gap-1 text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-slate-300 leading-7">"The student bundle was exactly what I needed — rugged case, earbuds and screen glass all matched to my phone. Saved me a lot of time."</p>
+          <cite class="not-italic"><span class="font-black text-white block">Priya S.</span><span class="text-sm text-slate-400">Student bundle customer</span></cite>
+        </blockquote>
+        <blockquote class="glass rounded-3xl p-7 flex flex-col gap-4">
+          <div class="flex gap-1 text-yellow-400 text-lg">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="text-slate-300 leading-7">"They transferred all my contacts and apps while I waited. The whole process was smooth and the team actually knew what they were talking about."</p>
+          <cite class="not-italic"><span class="font-black text-white block">Daniel K.</span><span class="text-sm text-slate-400">Galaxy S25 buyer</span></cite>
+        </blockquote>
       </div>
     </div>
   </section>
+
+  <!-- BOTTOM CTA — full-width dark image with centered text -->
+  <section class="relative overflow-hidden px-4 py-24 text-center">
+    <img class="absolute inset-0 h-full w-full object-cover opacity-20" src="https://images.unsplash.com/photo-1567581935884-3349723552ca?auto=format&fit=crop&w=1600&q=80" alt="Store background">
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(5,8,22,.6),rgba(5,8,22,.95))"></div>
+    <div class="relative z-10 mx-auto max-w-2xl">
+      <h2 class="text-4xl font-black md:text-6xl">Ready to upgrade today?</h2>
+      <p class="mt-5 text-xl text-slate-300">Visit the store, call us or send a message. We'll have your new phone ready before you leave.</p>
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="products.html" class="btn-primary">Shop all phones</a>
+        <a href="contact.html" class="btn-ghost">Contact the store</a>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
   <div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-    <div class="flex flex-col gap-5"><a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a><p class="text-slate-400 text-sm leading-relaxed">Your trusted partner for premium smartphones, certified accessories, and expert mobile repair services.</p></div>
-    <div><h3 class="font-black text-white mb-5">Quick Links</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../index.html">Home 1</a></li><li><a href="home-2.html">Home 2</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li></ul></div>
-    <div><h3 class="font-black text-white mb-5">Products</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="products.html">Smartphones</a></li><li><a href="products.html">Cases &amp; Covers</a></li><li><a href="products.html">Chargers</a></li><li><a href="products.html">Earbuds</a></li></ul></div>
+    <div class="flex flex-col gap-5">
+      <a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a>
+      <p class="text-slate-400 text-sm leading-relaxed">Your trusted partner for premium smartphones, certified accessories, and expert mobile repair services.</p>
+    </div>
+    <div><h3 class="font-black text-white mb-5">Quick Links</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../index.html">Home 1</a></li><li><a href="home-2.html">Home 2</a></li><li><a href="about.html">About Us</a></li><li><a href="products.html">Products</a></li><li><a href="services.html">Services</a></li></ul></div>
+    <div><h3 class="font-black text-white mb-5">Products</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="products.html">Smartphones</a></li><li><a href="products.html">Cases &amp; Covers</a></li><li><a href="products.html">Chargers</a></li><li><a href="products.html">Earbuds</a></li><li><a href="products.html">Power Banks</a></li></ul></div>
     <div><h3 class="font-black text-white mb-5">Contact</h3><ul class="flex flex-col gap-4 text-sm text-slate-400"><li>123 Tech Street, New York, NY</li><li><a href="tel:+15550190000">(555) 019-0000</a></li><li><a href="mailto:hello@voltedge.com">hello@voltedge.com</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><p class="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-slate-500">© <span data-year></span> VoltEdge Mobile — Premium Phone Retail &amp; Repair. All rights reserved.</p></div>
+  <div class="footer-bottom"><p class="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-slate-500">&copy; <span data-year></span> VoltEdge Mobile &mdash; Premium Phone Retail &amp; Repair. All rights reserved.</p></div>
 </footer>
+
 <script src="../assets/js/main.js"></script>
-<div class="fixed bottom-20 right-4 z-50 flex gap-2" data-mode-controls><button class="mode-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button><button class="rtl-toggle sans" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button></div>
+<div class="fixed bottom-20 right-4 z-50 flex gap-2" data-mode-controls><button class="mode-toggle" type="button" data-theme-toggle aria-label="Switch theme">&#9790;</button><button class="rtl-toggle sans" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button></div>
 </body>
 </html>
