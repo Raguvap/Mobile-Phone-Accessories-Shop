@@ -47,11 +47,15 @@
   color: #0f172a !important;
 }
 
-[data-theme="light"] p:not(.site-footer p),
+
 [data-theme="light"] li:not(.site-footer li),
 [data-theme="light"] dt,
 [data-theme="light"] dd {
   color: #334155 !important;
+}
+
+[data-theme="light"] p:not(.site-footer p) {
+  color: #4274a5 !important; 
 }
 
 [data-theme="light"] .text-slate-100,
