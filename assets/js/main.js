@@ -46,6 +46,13 @@ document.addEventListener("DOMContentLoaded", () => {
         menuButtons.forEach((b) => b.setAttribute("aria-expanded", "false"));
       }
     });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuButtons.forEach((b) => b.setAttribute("aria-expanded", "false"));
+      });
+    });
   }
 
   // Theme & RTL Toggle Buttons

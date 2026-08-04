@@ -57,23 +57,32 @@
     </nav>
 
     <!-- Mobile Drawer -->
-    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
-      <div class="border-b border-white/10 pb-2">
-        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
-        <a href="../index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
-        <a href="home-2.html" class="block py-1 text-slate-400">Home 2: Urban Lounge</a>
+    <div class="mobile-menu mx-auto max-w-7xl lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-3 mb-1">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-2 font-extrabold flex items-center gap-1.5">
+          <span>⚡</span> Select Storefront View:
+        </p>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="../index.html" class="justify-center text-center text-xs py-2 text-slate-400">Flagship Hub</a>
+          <a href="home-2.html" class="justify-center text-center text-xs py-2 text-slate-400">Cyber Lounge</a>
+        </div>
       </div>
-      <a href="about.html" class="py-1">About Us</a>
-      <a href="shop.html" class="py-1">Shop Accessories</a>
-      <a href="products.html" class="py-1 text-cyan-300 font-bold">Smartphones</a>
-      <a href="subscriptions.html" class="py-1">Protection Plans</a>
-      <a href="repair-guide.html" class="py-1">Charging & Repair Guide</a>
-      <a href="b2b.html" class="py-1">Corporate Bulk B2B</a>
-      <a href="services.html" class="py-1">Repair Services</a>
-      <a href="contact.html" class="py-1">Contact & Map</a>
-      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
-        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 py-1">
+        <a href="about.html"><span>ℹ️</span> About Us</a>
+        <a href="shop.html"><span>🛍️</span> Shop Gear</a>
+        <a href="products.html" aria-current="page"><span>📱</span> Smartphones</a>
+        <a href="subscriptions.html"><span>🛡️</span> Protection Plans</a>
+        <a href="repair-guide.html"><span>🔧</span> Repair & Battery Guide</a>
+        <a href="b2b.html"><span>🏢</span> Corporate Bulk B2B</a>
+        <a href="services.html"><span>🛠️</span> Repair Services</a>
+        <a href="contact.html"><span>📍</span> Contact & Map</a>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10 mt-1">
+        <a href="contact.html" class="btn-primary text-xs py-2.5 px-4 shadow-sm flex-1 justify-center sm:hidden">Book Repair</a>
+        <div class="flex items-center gap-2">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+          <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+        </div>
       </div>
     </div>
   </header>
@@ -96,7 +105,7 @@
 
   <!-- Phone 2 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1605236453806-6ff36851218e?auto=format&fit=crop&w=700&q=85" alt="Samsung Galaxy S25 Ultra">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=700&q=85" alt="Samsung Galaxy S25 Ultra">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Samsung AI</span>
       <h2 class="text-xl font-black text-white mt-1">Galaxy S25 Ultra 5G</h2>
@@ -107,7 +116,7 @@
 
   <!-- Phone 3 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=700&q=85" alt="Google Pixel 9 Pro XL">
+    <img class="h-60 w-full object-cover" src="../assets/images/google.png" alt="Google Pixel 9 Pro XL">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Google Tensor</span>
       <h2 class="text-xl font-black text-white mt-1">Google Pixel 9 Pro XL</h2>
@@ -118,7 +127,7 @@
 
   <!-- Phone 4 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?auto=format&fit=crop&w=700&q=85" alt="OnePlus 13 5G">
+    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1565849904461-04a58ad377e0?auto=format&fit=crop&w=700&q=85" alt="OnePlus 13 5G">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Hasselblad Camera</span>
       <h2 class="text-xl font-black text-white mt-1">OnePlus 13 5G</h2>
@@ -129,7 +138,7 @@
 
   <!-- Phone 5 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1606041011872-596597976b25?auto=format&fit=crop&w=700&q=85" alt="Xiaomi 15 Ultra">
+    <img class="h-60 w-full object-cover" src="../assets/images/xiamio.png" alt="Xiaomi 15 Ultra">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Leica Optics</span>
       <h2 class="text-xl font-black text-white mt-1">Xiaomi 15 Ultra</h2>
@@ -140,7 +149,7 @@
 
   <!-- Phone 6 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=700&q=85" alt="Nothing Phone (2a)">
+    <img class="h-60 w-full object-cover" src="../assets/images/nothing.png" alt="Nothing Phone (2a)">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Glyph Interface</span>
       <h2 class="text-xl font-black text-white mt-1">Nothing Phone (2a)</h2>
@@ -151,7 +160,7 @@
 
   <!-- Phone 7 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1546054454-aa26e2b734c7?auto=format&fit=crop&w=700&q=85" alt="Motorola Edge 50 Pro">
+    <img class="h-60 w-full object-cover" src="../assets/images/motorola.png" alt="Motorola Edge 50 Pro">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Pantone Color</span>
       <h2 class="text-xl font-black text-white mt-1">Motorola Edge 50 Pro</h2>
@@ -162,7 +171,7 @@
 
   <!-- Phone 8 -->
   <a class="product-card" href="product-details.html">
-    <img class="h-60 w-full object-cover" src="https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=700&q=85" alt="Asus ROG Phone 8 Pro">
+    <img class="h-60 w-full object-cover" src="../assets/images/asus.png" alt="Asus ROG Phone 8 Pro">
     <div class="p-5">
       <span class="text-xs font-black text-cyan-300 uppercase">Gaming Monster</span>
       <h2 class="text-xl font-black text-white mt-1">Asus ROG Phone 8 Pro</h2>

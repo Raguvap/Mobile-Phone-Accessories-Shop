@@ -57,23 +57,32 @@
     </nav>
 
     <!-- Mobile Drawer -->
-    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
-      <div class="border-b border-white/10 pb-2">
-        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
-        <a href="../index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
-        <a href="home-2.html" class="block py-1 text-slate-400">Home 2: Cyber Gamer Lounge</a>
+    <div class="mobile-menu mx-auto max-w-7xl lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-3 mb-1">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-2 font-extrabold flex items-center gap-1.5">
+          <span>⚡</span> Select Storefront View:
+        </p>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="../index.html" class="justify-center text-center text-xs py-2 text-slate-400">Flagship Hub</a>
+          <a href="home-2.html" class="justify-center text-center text-xs py-2 text-slate-400">Cyber Lounge</a>
+        </div>
       </div>
-      <a href="about.html" class="py-1">About Us</a>
-      <a href="shop.html" class="py-1 text-cyan-300 font-bold">Shop Accessories</a>
-      <a href="products.html" class="py-1">Smartphones</a>
-      <a href="subscriptions.html" class="py-1">Protection Plans</a>
-      <a href="repair-guide.html" class="py-1">Charging & Repair Guide</a>
-      <a href="b2b.html" class="py-1">Corporate Bulk B2B</a>
-      <a href="services.html" class="py-1">Repair Services</a>
-      <a href="contact.html" class="py-1">Contact & Map</a>
-      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
-        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 py-1">
+        <a href="about.html"><span>ℹ️</span> About Us</a>
+        <a href="shop.html" aria-current="page"><span>🛍️</span> Shop Gear</a>
+        <a href="products.html"><span>📱</span> Smartphones</a>
+        <a href="subscriptions.html"><span>🛡️</span> Protection Plans</a>
+        <a href="repair-guide.html"><span>🔧</span> Repair & Battery Guide</a>
+        <a href="b2b.html"><span>🏢</span> Corporate Bulk B2B</a>
+        <a href="services.html"><span>🛠️</span> Repair Services</a>
+        <a href="contact.html"><span>📍</span> Contact & Map</a>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10 mt-1">
+        <a href="contact.html" class="btn-primary text-xs py-2.5 px-4 shadow-sm flex-1 justify-center sm:hidden">Book Repair</a>
+        <div class="flex items-center gap-2">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+          <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+        </div>
       </div>
     </div>
   </header>

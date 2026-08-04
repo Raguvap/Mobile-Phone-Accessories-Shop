@@ -57,37 +57,208 @@
     </nav>
 
     <!-- Mobile Drawer -->
-    <div class="mobile-menu mx-4 mt-3 gap-3 rounded-3xl border border-white/10 bg-slate-900 p-4 lg:hidden" data-mobile-menu>
-      <div class="border-b border-white/10 pb-2">
-        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-1 font-extrabold">Switch Home View:</p>
-        <a href="../index.html" class="block py-1 text-white font-bold">Home 1: Flagship Tech Hub</a>
-        <a href="home-2.html" class="block py-1 text-slate-400">Home 2: Urban Lounge</a>
+    <div class="mobile-menu mx-auto max-w-7xl lg:hidden" data-mobile-menu>
+      <div class="border-b border-white/10 pb-3 mb-1">
+        <p class="text-xs text-cyan-300 uppercase tracking-wider mb-2 font-extrabold flex items-center gap-1.5">
+          <span>⚡</span> Select Storefront View:
+        </p>
+        <div class="grid grid-cols-2 gap-2">
+          <a href="../index.html" class="justify-center text-center text-xs py-2 text-slate-400">Flagship Hub</a>
+          <a href="home-2.html" class="justify-center text-center text-xs py-2 text-slate-400">Cyber Lounge</a>
+        </div>
       </div>
-      <a href="about.html" class="py-1">About Us</a>
-      <a href="shop.html" class="py-1">Shop Accessories</a>
-      <a href="products.html" class="py-1">Smartphones</a>
-      <a href="subscriptions.html" class="py-1">Protection Plans</a>
-      <a href="repair-guide.html" class="py-1">Charging & Repair Guide</a>
-      <a href="b2b.html" class="py-1">Corporate Bulk B2B</a>
-      <a href="services.html" class="py-1 text-cyan-300 font-bold">Repair Services</a>
-      <a href="contact.html" class="py-1">Contact & Map</a>
-      <div class="flex items-center gap-2 pt-3 border-t border-white/10 mt-2">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
-        <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-1.5 py-1">
+        <a href="about.html"><span>ℹ️</span> About Us</a>
+        <a href="shop.html"><span>🛍️</span> Shop Gear</a>
+        <a href="products.html"><span>📱</span> Smartphones</a>
+        <a href="subscriptions.html"><span>🛡️</span> Protection Plans</a>
+        <a href="repair-guide.html"><span>🔧</span> Repair & Battery Guide</a>
+        <a href="b2b.html"><span>🏢</span> Corporate Bulk B2B</a>
+        <a href="services.html" aria-current="page"><span>🛠️</span> Repair Services</a>
+        <a href="contact.html"><span>📍</span> Contact & Map</a>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/10 mt-1">
+        <a href="contact.html" class="btn-primary text-xs py-2.5 px-4 shadow-sm flex-1 justify-center sm:hidden">Book Repair</a>
+        <div class="flex items-center gap-2">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme">☾</button>
+          <button class="rtl-toggle theme-toggle" type="button" data-rtl-toggle aria-label="Toggle RTL layout">RTL</button>
+        </div>
       </div>
     </div>
-  </header><main class="px-4 py-16"><section class="mx-auto max-w-7xl">
-  <div class="flex flex-col md:flex-row items-center gap-8 mb-12">
-    <img src="../assets/images/phone.png" alt="Phone repair" class="w-full md:w-1/2 h-auto rounded-lg shadow-lg">
-    <div class="text-center md:text-left">
-      <h2 class="text-3xl font-black text-gradient">Premium Phone Repair Services</h2>
-      <p class="mt-4 text-slate-300 max-w-md">Our expert technicians use original parts and advanced tools to bring your device back to life quickly and affordably.</p>
+  </header><main class="px-4 py-16">
+  <!-- Hero Section -->
+  <section class="mx-auto max-w-7xl">
+    <div class="flex flex-col md:flex-row items-center gap-8 mb-16">
+      <div class="w-full md:w-1/2">
+        <span class="badge-tag mb-3">On-Site Express Lab</span>
+        <h1 class="mt-2 text-4xl font-black text-gradient md:text-6xl">Rapid Mobile Phone Repair Services</h1>
+        <p class="mt-4 text-slate-300 text-base md:text-lg leading-relaxed">Our certified technicians use original OEM parts, precision micro-soldering, and diagnostic software to restore your device to factory condition in as little as 30 minutes.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="contact.html" class="btn-primary">Book Repair Slot →</a>
+          <a href="#pricing" class="btn-ghost">View Service Pricing</a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 overflow-hidden rounded-3xl border border-white/15 shadow-2xl">
+        <img src="../assets/images/phone.png" alt="Express phone repair laboratory with tools" class="w-full h-auto object-cover">
+      </div>
     </div>
-  </div><a href="../index.html" class="text-cyan-200">VoltEdge</a><h1 class="mt-4 text-5xl font-black text-gradient">Repair Services</h1><div class="mt-8 grid gap-5 md:grid-cols-4"><article class="glass rounded-3xl p-6"><h2 class="font-black">Screen replacement</h2><p class="mt-3 text-slate-400">Glass and display assemblies.</p>
-      <p class="mt-2 text-slate-400">We replace cracked screens with high‑quality OEM glass, ensuring perfect fit and touch sensitivity.</p></article><article class="glass rounded-3xl p-6"><h2 class="font-black">Battery replacement</h2><p class="mt-3 text-slate-400">Health test and new cell.</p>
-      <p class="mt-2 text-slate-400">Our battery diagnostics guarantee optimal performance and safety, using certified replacements.</p></article><article class="glass rounded-3xl p-6"><h2 class="font-black">Water damage repair</h2><p class="mt-3 text-slate-400">Cleaning and diagnostics.</p>
-      <p class="mt-2 text-slate-400">We expertly clean and restore water‑damaged devices, reviving functionality with specialized tools.</p></article><article class="glass rounded-3xl p-6"><h2 class="font-black">Software update</h2><p class="mt-3 text-slate-400">Backup, restore and unlock help.</p>
-      <p class="mt-2 text-slate-400">Our software services include data migration, OS updates, and unlocking for a seamless experience.</p></article></div></section></main><footer class="site-footer"><div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4"><div class="flex flex-col gap-5"><a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a><p class="text-slate-400 text-sm leading-relaxed">Your trusted partner for premium smartphones, certified accessories, and expert mobile repair services.</p><div class="footer-social flex gap-3"><a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div></div><div><h3 class="font-black text-white mb-5">Quick Links</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../index.html">Home</a></li><li><a href="../pages/about.html">About Us</a></li><li><a href="../pages/products.html">Products</a></li><li><a href="../pages/services.html">Services</a></li><li><a href="../pages/contact.html">Contact</a></li></ul></div><div><h3 class="font-black text-white mb-5">Products</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../pages/products.html">Smartphones</a></li><li><a href="../pages/products.html">Cases &amp; Covers</a></li><li><a href="../pages/products.html">Chargers</a></li><li><a href="../pages/products.html">Earbuds</a></li><li><a href="../pages/products.html">Power Banks</a></li></ul></div><div><h3 class="font-black text-white mb-5">Contact</h3><ul class="flex flex-col gap-4 text-sm text-slate-400"><li class="flex items-start gap-3"><svg class="mt-0.5 shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>123 Tech Street, New York, NY</li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg><a href="tel:+15550190000">(555) 019-0000</a></li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:hello@voltedge.com">hello@voltedge.com</a></li></ul></div></div><div class="footer-bottom"><p class="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-slate-500">© <span data-year></span> VoltEdge Mobile — Premium Phone Retail &amp; Repair. All rights reserved.</p></div></footer><script src="../assets/js/main.js"></script></body></html>
+  </section>
+
+  <!-- Service Cards Grid -->
+  <section class="mx-auto max-w-7xl py-12 border-t border-white/10">
+    <span class="badge-tag mb-3">Expert Capabilities</span>
+    <h2 class="text-3xl font-black text-white md:text-5xl mb-8">Our Primary Repair Offerings</h2>
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <article class="card-glass-glow p-6 flex flex-col justify-between">
+        <div>
+          <div class="text-3xl mb-3">📱</div>
+          <span class="text-xs font-black uppercase tracking-widest text-cyan-300">01 / Display</span>
+          <h3 class="text-xl font-black text-white mt-2">OLED & Glass Replacement</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">Cracked glass, distorted touch responsive pixels, or blank screens replaced in 30 minutes with TrueTone & FaceID recalibration.</p>
+        </div>
+        <div class="mt-4 border-t border-white/10 pt-3 flex justify-between items-center">
+          <span class="text-xs font-bold text-cyan-300">From $49</span>
+          <span class="text-[10px] text-slate-400">~ 30 Mins</span>
+        </div>
+      </article>
+
+      <article class="card-glass-glow p-6 flex flex-col justify-between">
+        <div>
+          <div class="text-3xl mb-3">🔋</div>
+          <span class="text-xs font-black uppercase tracking-widest text-violet-400">02 / Battery</span>
+          <h3 class="text-xl font-black text-white mt-2">Certified Battery Health Swap</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">Fix sudden battery drain, overheating, or failure to hold charge with high-cycle capacity cells tested for zero voltage drop.</p>
+        </div>
+        <div class="mt-4 border-t border-white/10 pt-3 flex justify-between items-center">
+          <span class="text-xs font-bold text-violet-400">From $39</span>
+          <span class="text-[10px] text-slate-400">~ 20 Mins</span>
+        </div>
+      </article>
+
+      <article class="card-glass-glow p-6 flex flex-col justify-between">
+        <div>
+          <div class="text-3xl mb-3">💧</div>
+          <span class="text-xs font-black uppercase tracking-widest text-lime-400">03 / Recovery</span>
+          <h3 class="text-xl font-black text-white mt-2">Ultrasonic Water Damage Wash</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">Deep chemical board wash, corrosion removal, chip reflowing, and data restoration for water-submerged devices.</p>
+        </div>
+        <div class="mt-4 border-t border-white/10 pt-3 flex justify-between items-center">
+          <span class="text-xs font-bold text-lime-400">From $59</span>
+          <span class="text-[10px] text-slate-400">Same Day</span>
+        </div>
+      </article>
+
+      <article class="card-glass-glow p-6 flex flex-col justify-between">
+        <div>
+          <div class="text-3xl mb-3">⚡</div>
+          <span class="text-xs font-black uppercase tracking-widest text-yellow-400">04 / Software</span>
+          <h3 class="text-xl font-black text-white mt-2">Data & OS Migration</h3>
+          <p class="mt-3 text-xs text-slate-300 leading-relaxed">Complete transfer of photos, messages, banking apps, and system settings to your new phone without data loss.</p>
+        </div>
+        <div class="mt-4 border-t border-white/10 pt-3 flex justify-between items-center">
+          <span class="text-xs font-bold text-yellow-400">From $29</span>
+          <span class="text-[10px] text-slate-400">~ 45 Mins</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pricing Table Section -->
+  <section id="pricing" class="mx-auto max-w-7xl py-12">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="badge-tag mb-2">Transparent Pricing</span>
+      <h2 class="text-3xl font-black text-white md:text-5xl">Service Pricing Guide</h2>
+      <p class="mt-3 text-slate-300 text-sm">All repairs include free multi-point diagnostics, OEM grade parts, and a 90-day warranty.</p>
+    </div>
+    <div class="overflow-x-auto rounded-3xl border border-white/15 bg-slate-900/80 shadow-2xl">
+      <table class="w-full text-left border-collapse text-sm">
+        <thead>
+          <tr class="border-b border-white/15 bg-slate-950/80 text-cyan-300 text-xs font-black uppercase tracking-wider">
+            <th class="p-4">Repair Service</th>
+            <th class="p-4">Estimated Time</th>
+            <th class="p-4">Parts Grade</th>
+            <th class="p-4">Warranty</th>
+            <th class="p-4 text-right">Starting Price</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-white/10 text-slate-300">
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>📱</span> iPhone Screen Replacement</td>
+            <td class="p-4">30 Mins</td>
+            <td class="p-4 text-cyan-400 font-semibold">Original OEM Display</td>
+            <td class="p-4">90 Days</td>
+            <td class="p-4 text-right font-black text-white">$69.00</td>
+          </tr>
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>📱</span> Samsung Galaxy Screen Fix</td>
+            <td class="p-4">45 Mins</td>
+            <td class="p-4 text-cyan-400 font-semibold">Official AMOLED Panel</td>
+            <td class="p-4">90 Days</td>
+            <td class="p-4 text-right font-black text-white">$79.00</td>
+          </tr>
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>🔋</span> High-Capacity Battery Replacement</td>
+            <td class="p-4">20 Mins</td>
+            <td class="p-4 text-cyan-400 font-semibold">Certified OEM Battery</td>
+            <td class="p-4">6 Months</td>
+            <td class="p-4 text-right font-black text-white">$39.00</td>
+          </tr>
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>🔌</span> USB-C / Lightning Port Repair</td>
+            <td class="p-4">30 Mins</td>
+            <td class="p-4 text-cyan-400 font-semibold">Flex Assembly</td>
+            <td class="p-4">90 Days</td>
+            <td class="p-4 text-right font-black text-white">$45.00</td>
+          </tr>
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>📷</span> Camera Lens & Module Repair</td>
+            <td class="p-4">40 Mins</td>
+            <td class="p-4 text-cyan-400 font-semibold">Sapphire Glass & Module</td>
+            <td class="p-4">90 Days</td>
+            <td class="p-4 text-right font-black text-white">$49.00</td>
+          </tr>
+          <tr class="hover:bg-white/5 transition-colors">
+            <td class="p-4 font-bold text-white flex items-center gap-2"><span>💧</span> Ultrasonic Water Recovery</td>
+            <td class="p-4">Same Day</td>
+            <td class="p-4 text-cyan-400 font-semibold">Board Micro-Clean</td>
+            <td class="p-4">30 Days</td>
+            <td class="p-4 text-right font-black text-white">$59.00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Repair Workflow Timeline -->
+  <section class="mx-auto max-w-7xl py-12">
+    <div class="text-center max-w-3xl mx-auto mb-12">
+      <span class="badge-tag mb-2">Standard Process</span>
+      <h2 class="text-3xl font-black text-white md:text-5xl">How Our Service Works</h2>
+    </div>
+    <div class="grid gap-6 md:grid-cols-4">
+      <div class="card-pillar-accent">
+        <span class="text-xs font-black text-cyan-300 uppercase">Step 01</span>
+        <h3 class="text-lg font-black text-white mt-2">Free Check</h3>
+        <p class="mt-2 text-xs text-slate-300">We inspect screen responsiveness, battery cycles, charging port voltage & software stability.</p>
+      </div>
+      <div class="card-pillar-accent violet">
+        <span class="text-xs font-black text-violet-400 uppercase">Step 02</span>
+        <h3 class="text-lg font-black text-white mt-2">Upfront Quote</h3>
+        <p class="mt-2 text-xs text-slate-300">You receive a fixed price quote before any repair work begins — no hidden fees or extra charges.</p>
+      </div>
+      <div class="card-pillar-accent lime">
+        <span class="text-xs font-black text-lime-400 uppercase">Step 03</span>
+        <h3 class="text-lg font-black text-white mt-2">Express Repair</h3>
+        <p class="mt-2 text-xs text-slate-300">Our lab technicians perform the repair in our ESD-safe clean environment within 30 minutes.</p>
+      </div>
+      <div class="card-pillar-accent gold">
+        <span class="text-xs font-black text-yellow-400 uppercase">Step 04</span>
+        <h3 class="text-lg font-black text-white mt-2">Quality Test</h3>
+        <p class="mt-2 text-xs text-slate-300">We run a 15-point functional check, issue your 90-day warranty card, and hand back your device.</p>
+      </div>
+    </div>
+  </section>
+</main><footer class="site-footer"><div class="mx-auto max-w-7xl px-4 py-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4"><div class="flex flex-col gap-5"><a href="../index.html" class="flex items-center gap-3 font-black tracking-wide text-white"><span class="grid h-10 w-10 place-items-center rounded-2xl tech-gradient">V</span>VoltEdge</a><p class="text-slate-400 text-sm leading-relaxed">Your trusted partner for premium smartphones, certified accessories, and expert mobile repair services.</p><div class="footer-social flex gap-3"><a href="#" aria-label="Facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" aria-label="Instagram"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a><a href="#" aria-label="YouTube"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z"/></svg></a><a href="#" aria-label="LinkedIn"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a></div></div><div><h3 class="font-black text-white mb-5">Quick Links</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../index.html">Home</a></li><li><a href="../pages/about.html">About Us</a></li><li><a href="../pages/products.html">Products</a></li><li><a href="../pages/services.html">Services</a></li><li><a href="../pages/contact.html">Contact</a></li></ul></div><div><h3 class="font-black text-white mb-5">Products</h3><ul class="flex flex-col gap-3 text-sm"><li><a href="../pages/products.html">Smartphones</a></li><li><a href="../pages/products.html">Cases &amp; Covers</a></li><li><a href="../pages/products.html">Chargers</a></li><li><a href="../pages/products.html">Earbuds</a></li><li><a href="../pages/products.html">Power Banks</a></li></ul></div><div><h3 class="font-black text-white mb-5">Contact</h3><ul class="flex flex-col gap-4 text-sm text-slate-400"><li class="flex items-start gap-3"><svg class="mt-0.5 shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>123 Tech Street, New York, NY</li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/></svg><a href="tel:+15550190000">(555) 019-0000</a></li><li class="flex items-center gap-3"><svg class="shrink-0 text-cyan-400" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:hello@voltedge.com">hello@voltedge.com</a></li></ul></div></div><div class="footer-bottom"><p class="mx-auto max-w-7xl px-4 py-5 text-center text-sm text-slate-500">© <span data-year></span> VoltEdge Mobile — Premium Phone Retail &amp; Repair. All rights reserved.</p></div></footer><script src="../assets/js/main.js"></script></body></html>
 
 
 
